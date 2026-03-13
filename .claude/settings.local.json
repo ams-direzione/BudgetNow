@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ss -tlnp)",
+      "Bash(docker exec budgetnow-app cat /var/www/html/storage/logs/laravel.log)",
+      "Bash(docker exec budgetnow-app php artisan key:generate)",
+      "Bash(docker exec budgetnow-app php artisan route:list --columns=method,uri,name)",
+      "Bash(curl -s http://localhost:8085/libro-giornale/create)"
+    ]
+  }
+}

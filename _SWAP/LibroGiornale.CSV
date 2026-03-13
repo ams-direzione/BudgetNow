@@ -1,0 +1,900 @@
+Data;Tipo;Voce;Descrizione;Importo;Conto
+01/01/2025;Ricavi;-;Saldo 2024;1.140,00 €;
+02/01/2025;Costi;BANCA - Mutuo Zia Annamaria;Rata Gennaio;724,00 €;
+02/01/2025;Costi;PIATTAFORME - Netflix;Gennaio;5,99 €;
+02/01/2025;Costi;AUTO - Benzina;Gennaio;77,00 €;
+02/01/2025;Costi;PIATTAFORME - Pzt;;40,00 €;
+02/01/2025;Costi;PIATTAFORME - Disney+;;5,99 €;
+02/01/2025;Ricavi;Buoni Pasto;Gennaio;154,80 €;
+02/01/2025;Costi;UTENZE - Fonia Mobile;Gennaio;56,98 €;
+03/01/2025;Ricavi;Contributo Benzina;Gennaio;77,00 €;
+04/01/2025;Costi;PERSONALI - Vestiti;Zalando;200,00 €;
+04/01/2025;Costi;AG.ENTRATE - Rateizzo I;Rata Gennaio;51,96 €;
+07/01/2025;Costi;SPESA - Delivery;Pizzeria;17,00 €;
+07/01/2025;Costi;UTENZE - Cloud;Gennaio Microsoft;13,66 €;
+10/01/2025;Costi;INVESTIMENTI - Crypto;Binance;250,00 €;
+13/01/2025;Costi;SPESA - Quotidiana;;24,67 €;
+13/01/2025;Costi;SPESA - Delivery;;15,80 €;
+13/01/2025;Costi;SPESA - Quotidiana;;9,91 €;
+13/01/2025;Costi;SALUTE - Farmaci;;13,90 €;
+14/01/2025;Costi;AG.ENTRATE - Rateizzo II;Rata Gennaio;100,00 €;
+17/01/2025;Costi;SALUTE - Farmaci;Gentalin Beta Diana;4,00 €;
+19/01/2025;Costi;INVESTIMENTI - SCC;Gazzabet;30,00 €;
+19/01/2025;Costi;SPESA - Quotidiana;;32,00 €;
+20/01/2025;Costi;SPESA - Quotidiana;;16,00 €;
+20/01/2025;Costi;INVESTIMENTI - Crypto;Bitget;115,00 €;
+21/01/2025;Costi;BENI - Tecnologia;Cover Peppe;40,00 €;
+21/01/2025;Costi;SPESA - Quotidiana;Decò;39,39 €;
+23/01/2025;Ricavi;Stipendio;Gennaio;3.172,59 €;
+23/01/2025;Costi;AG.ENTRATE - Pignoramento I;Gennaio;450,00 €;
+24/01/2025;Costi;INVESTIMENTI - SCC;Gazzabet;20,00 €;
+24/01/2025;Costi;SPESE - Diana;Acquisto Collare Elisabettiano;20,00 €;
+24/01/2025;Costi;SPESA - Quotidiana;Caseificio Peppe;8,40 €;
+25/01/2025;Costi;USCITE - Ristoranti;Osteria Pignatelli;200,00 €;
+25/01/2025;Ricavi;Contributo Cibo;;200,00 €;
+26/01/2025;Costi;BENI - Acquisti Casa;IKEA;221,50 €;
+26/01/2025;Ricavi;Contributo Beni;;221,50 €;
+26/01/2025;Costi;USCITE - Ristoranti;Casa K'Birr;98,00 €;
+26/01/2025;Ricavi;Contributo Cibo;;98,00 €;
+26/01/2025;Costi;SPESA - Delivery;;13,00 €;
+26/01/2025;Costi;PIATTAFORME - Sony Playstation;;8,99 €; Paypal
+26/01/2025;Costi;INVESTIMENTI - SCC;Gazzabet;69,00 €; Revolut
+27/01/2025;Costi;DEBITO - Cucina;Rata Cucina;114,00 €;
+27/01/2025;Costi;SPESA - Delivery;;4,00 €;
+27/01/2025;Costi;UTENZE - Gas;nov-24;79,00 €;
+27/01/2025;Costi;UTENZE - Gas;dic-24;116,00 €;
+28/01/2025;Ricavi;Assegno Unico;Dicembre;54,00 €; Unicredit
+01/02/2025;Costi;UTENZE - Fonia Mobile;Febbraio;56,98 €;
+01/02/2025;Costi;PIATTAFORME - Disney+;Febbraio;5,99 €;
+01/02/2025;Costi;SPESA - Quotidiana;Latticini;10,00 €;
+01/02/2025;Costi;BANCA - Mutuo Zia Annamaria;Febbraio;724,00 €;
+02/02/2025;Costi;SPESA - Quotidiana;Decò;5,53 €;
+02/02/2025;Costi;SPESA - Quotidiana;Decò;5,89 €;
+02/02/2025;Costi;SPESA - Quotidiana;Latticini;13,00 €;
+03/02/2025;Costi;SPESE - Diana;Crocchette;37,00 €;
+03/02/2025;Costi;SPESA - Quotidiana;Sole 365;17,86 €;
+03/02/2025;Costi;SPESA - Quotidiana;Decò;9,94 €;
+04/02/2025;Costi;INVESTIMENTI - SCC;Vivabet;50,00 €;
+04/02/2025;Costi;PERSONALI - Barbiere;;15,00 €;
+04/02/2025;Costi;SPESA - Delivery;Antinori;5,00 €;
+05/02/2025;Costi;TOOLS - Microsoft;Febbraio;13,66 €;
+05/02/2025;Costi;SPESA - Pranzo Lavoro Fuori;Gastro;3,50 €;
+06/02/2025;Costi;TOOLS - SurfShark;2025;60,84 €;
+06/02/2025;Costi;INVESTIMENTI - Crypto;Solana;10,00 €;
+07/02/2025;Costi;SPESA - Pranzo Lavoro Fuori;;18,00 €;
+07/02/2025;Costi;SPESA - Quotidiana;;3,40 €;
+07/02/2025;Costi;SPESA - Quotidiana;Battarra;9,50 €;
+09/02/2025;Costi;INVESTIMENTI - Crypto;Solana;10,00 €;
+09/02/2025;Costi;SPESA - Delivery;;48,00 €;
+09/02/2025;Costi;SPESA - Delivery;;20,00 €;
+10/02/2025;Costi;USCITE - Ristoranti;;23,70 €;
+11/02/2025;Costi;SPESA - Pranzo Lavoro Fuori;;25,00 €;
+11/02/2025;Costi;SPESA - Quotidiana;;3,69 €;
+13/02/2025;Costi;AUTO - Manutenzione;Gomme;320,00 €;
+13/02/2025;Ricavi;Contributo Auto;Gomme;320,00 €;
+13/02/2025;Costi;AUTO - Benzina;;75,00 €;
+13/02/2025;Ricavi;Contributo Benzina;;75,00 €;
+13/02/2025;Costi;FAMIGLIA - Vestiti;Neve;550,00 €;
+13/02/2025;Ricavi;Buoni Pasto;Buoni Pasto Febbraio;92,88 €;
+15/02/2025;Costi;INVESTIMENTI - Crypto;Solana;10,00 €;
+15/02/2025;Costi;VACANZE;;51,60 €;
+15/02/2025;Costi;VACANZE;;5,80 €;
+15/02/2025;Costi;VACANZE;;41,60 €;
+16/02/2025;Costi;VACANZE;Roccaraso;764,00 €;
+16/02/2025;Ricavi;Contributo Vacanze;Roccaraso;764,00 €;
+17/02/2025;Costi;AG.ENTRATE - Rateizzo I;Febbraio;51,96 €;
+17/02/2025;Costi;AG.ENTRATE - Rateizzo II;Febbraio;37,46 €;
+18/02/2025;Costi;SPESA - Quotidiana;;13,00 €;
+20/02/2025;Costi;SPESA - Quotidiana;;5,67 €;
+21/02/2025;Costi;SPESA - Pranzo Lavoro Fuori;;5,00 €;
+21/02/2025;Costi;USCITE - Ristoranti;;17,00 €;
+24/02/2025;Costi;INVESTIMENTI - SCC;Vivabet;35,00 €;
+24/02/2025;Costi;SPESA - Quotidiana;;5,67 €;
+24/02/2025;Costi;SPESA - Pranzo Lavoro Fuori;;5,00 €;
+24/02/2025;Costi;SPESA - Pranzo Lavoro Fuori;;17,00 €;
+24/02/2025;Costi;BENI - Tecnologia;;20,00 €;
+25/02/2025;Ricavi;Stipendio;Febbraio;2.899,38 €;
+26/02/2025;Costi;SPESA - Quotidiana;;20,00 €;
+26/02/2025;Costi;PIATTAFORME - Sony Playstation;;8,99 €; Paypal
+27/02/2025;Costi;PIATTAFORME - Netflix;;8,99 €;
+28/02/2025;Costi;INVESTIMENTI - SCC;Vivabet;35,00 €;
+28/02/2025;Costi;SPESA - Quotidiana;;19,00 €;
+28/02/2025;Ricavi;Assegno Unico;Gennaio;54,00 €; Unicredit
+01/03/2025;Costi;UTENZE - Fonia Mobile;;56,98 €;
+01/03/2025;Costi;INVESTIMENTI - Crypto;Solana;10,00 €;
+01/03/2025;Costi;PIATTAFORME - Disney+;;5,99 €;
+01/03/2025;Costi;SALUTE - Farmaci;;22,70 €;
+01/03/2025;Costi;BANCA - Mutuo Zia Annamaria;feb-25;724,00 €;
+02/03/2025;Costi;SPESA - Quotidiana;Decò;15,10 €;
+02/03/2025;Costi;SPESA - Quotidiana;Caseificio Peppe;16,50 €;
+02/03/2025;Costi;INVESTIMENTI - SCC;Vivabet;30,00 €;
+02/03/2025;Costi;INVESTIMENTI - Crypto;Binance;500,00 €;
+03/03/2025;Costi;RISPARMI - Conto Deposito Peppe;Febbraio;300,00 €;
+03/03/2025;Costi;BANCA - Costi;;6,47 €;
+03/03/2025;Costi;BANCA - Costi;;28,35 €;
+04/03/2025;Costi;SPESA - Pranzo Lavoro Fuori;;8,00 €;
+04/03/2025;Costi;INVESTIMENTI - SCC;Vivabet;30,00 €;
+04/03/2025;Costi;SPESA - Quotidiana;;15,10 €;
+04/03/2025;Costi;SPESA - Quotidiana;Latticini;16,50 €;
+05/03/2025;Costi;TOOLS - Microsoft;;13,66 €;
+05/03/2025;Costi;SALUTE - Farmaci;;10,20 €;
+05/03/2025;Costi;AG.ENTRATE - Rottamazione;Febbraio I;295,44 €;
+05/03/2025;Costi;AG.ENTRATE - Rateizzo I;Febbraio;51,96 €;
+06/03/2025;Costi;BENI - Tecnologia;Cinturini;15,00 €;
+06/03/2025;Costi;BENI - Tecnologia;;7,00 €;
+07/03/2025;Costi;BENI - Acquisti Casa;;79,00 €;
+08/03/2025;Costi;BENI - Tecnologia;;39,95 €;
+09/03/2025;Costi;BENI - Tecnologia;;16,88 €;
+10/03/2025;Costi;SPESA - Quotidiana;;11,13 €;
+10/03/2025;Costi;SPESA - Quotidiana;;5,40 €;
+10/03/2025;Costi;BENI - Tecnologia;;114,33 €;
+11/03/2025;Costi;SPESA - Quotidiana;Latticini;20,90 €;
+13/03/2025;Costi;SPESA - Quotidiana;;12,63 €;
+14/03/2025;Costi;SPESA - Quotidiana;;5,60 €;
+14/03/2025;Costi;SPESA - Delivery;;14,50 €;
+14/03/2025;Costi;SPESE - Regali Amici;;50,00 €;
+14/03/2025;Ricavi;Buoni Pasto;Febbraio;77,16 €;
+15/03/2025;Costi;INVESTIMENTI - Crypto;Solana;10,00 €;
+16/03/2025;Costi;SPESA - Delivery;Zeppole;18,00 €;
+16/03/2025;Costi;SPESA - Quotidiana;;9,65 €;
+17/03/2025;Costi;AG.ENTRATE - Rateizzo II;Febbraio;37,46 €;
+17/03/2025;Costi;INVESTIMENTI - SCC;Gazzabet;50,00 €;
+17/03/2025;Costi;BANCA - Costi;;2,47 €;
+17/03/2025;Costi;SPESA - Quotidiana;;12,63 €;
+17/03/2025;Costi;SPESA - Pranzo Lavoro Fuori;;5,60 €;
+17/03/2025;Costi;INVESTIMENTI - SCC;Gazzabet;20,00 €;
+17/03/2025;Costi;INVESTIMENTI - SCC;Gazzabet;40,00 €;
+17/03/2025;Costi;SPESA - Quotidiana;;7,99 €;
+18/03/2025;Costi;SPESA - Quotidiana;;9,65 €;
+18/03/2025;Costi;SPESA - Delivery;;18,00 €;
+18/03/2025;Costi;SPESA - Quotidiana;;6,69 €;
+20/03/2025;Costi;INVESTIMENTI - SCC;Gazzabet;40,00 €;
+20/03/2025;Costi;SPESA - Quotidiana;;7,99 €;
+20/03/2025;Costi;SPESA - Quotidiana;;6,69 €;
+21/03/2025;Costi;AUTO - Pedaggi e Parcheggi;;1,65 €;
+21/03/2025;Costi;SPESA - Pranzo Lavoro Fuori;;4,40 €;
+22/03/2025;Costi;INVESTIMENTI - Crypto;;10,00 €;
+23/03/2025;Costi;USCITE - Ristoranti;Trattoria Vanvitelli;110,00 €;
+23/03/2025;Ricavi;Contributo Cibo;;110,00 €;
+23/03/2025;Costi;BENI - Tecnologia;;118,00 €;
+23/03/2025;Ricavi;Contributo Beni;;118,00 €;
+24/03/2025;Costi;INVESTIMENTI - SCC;Gazzabet;52,47 €;
+24/03/2025;Costi;INVESTIMENTI - SCC;Gazzabet;52,47 €;
+24/03/2025;Costi;SPESA - Pranzo Lavoro Fuori;;4,40 €;
+24/03/2025;Costi;AUTO - Pedaggi e Parcheggi;;1,65 €;
+24/03/2025;Ricavi;Stipendio;;2.883,06 €;
+24/03/2025;Ricavi;Contributo Beni;Recupero quote Cassa economale;112,97 €;
+25/03/2025;Costi;SPESA - Quotidiana;Latticini;16,00 €;
+25/03/2025;Costi;AG.ENTRATE - Rateizzo II;;37,46 €;
+26/03/2025;Costi;SPESA - Quotidiana;;1,80 €;
+26/03/2025;Costi;SPESA - Pranzo Lavoro Fuori;;35,00 €;
+26/03/2025;Costi;PIATTAFORME - Sony Playstation;;8,99 €; Paypal
+27/03/2025;Costi;RISPARMI - Conto Deposito Peppe;Febbraio;504,00 €;
+27/03/2025;Costi;SPESA - Quotidiana;Decò;8,69 €;
+28/03/2025;Costi;SPESA - Pranzo Lavoro Fuori;Regine;35,00 €;
+28/03/2025;Costi;PIATTAFORME - Netflix;Aprile;6,99 €;
+28/03/2025;Ricavi;Assegno Unico;Febbraio;54,00 €; Unicredit
+31/03/2025;Ricavi;Contributo Beni;;292,16 €;
+31/03/2025;Costi;SPESA - Quotidiana;;5,20 €;
+31/03/2025;Costi;SPESA - Quotidiana;Caseificio Peppe;11,90 €;
+31/03/2025;Costi;SPESA - Quotidiana;Decò;20,00 €;
+31/03/2025;Costi;BANCA - Costi;Competenze Trimestrali; -   € ;
+01/04/2025;Costi;PIATTAFORME - Disney+;Aprile;5,99 €; CartaDiCredito
+01/04/2025;Costi;SALUTE - Visite;Cardiologo Peppe;160,00 €; CartaDiCredito
+01/04/2025;Costi;BANCA - Costi;Marzo;4,00 €;
+01/04/2025;Costi;SPESA - Delivery;Cornetti;6,50 €;
+01/04/2025;Costi;SPESA - Quotidiana;Decò;12,88 €;
+02/04/2025;Costi;UTENZE - Fonia Mobile;Aprile;56,98 €; CartaDiCredito
+02/04/2025;Costi;BANCA - Mutuo Zia Annamaria;Marzo;724,00 €;
+02/04/2025;Costi;SPESA - Quotidiana;Bar Santobono;12,20 €; Unicredit
+02/04/2025;Costi;INVESTIMENTI - SCC;Gazzabet;45,00 €; Revolut
+03/04/2025;Costi;UTENZE - Gas;Gennaio - Aprile I;54,30 €;
+03/04/2025;Costi;UTENZE - Gas;Aprile I;96,72 €;
+03/04/2025;Costi;SPESA - Quotidiana;Decò;9,37 €;
+03/04/2025;Costi;SPESA - Quotidiana;Pescheria;11,60 €;
+04/04/2025;Costi;SPESA - Quotidiana;Decò;14,44 €; Unicredit
+04/04/2025;Costi;INVESTIMENTI - SCC;Gazzabet;60,00 €; Revolut
+05/04/2025;Costi;AG.ENTRATE - Rottamazione;Febbraio II;295,44 €;
+07/04/2025;Costi;AUTO - Pedaggi e Parcheggi;Tangenziale;1,00 €; Unicredit
+07/04/2025;Costi;USCITE - Amici;Zoo;30,00 €; Unicredit
+07/04/2025;Costi;SPESA - Delivery;Pizzeria;38,50 €; Unicredit
+07/04/2025;Costi;TOOLS - Microsoft;Aprile;13,66 €; CartaDiCredito
+07/04/2025;Costi;INVESTIMENTI - Crypto;Binance;10,00 €; CartaDiCredito
+07/04/2025;Costi;HOBBY - Formazione;;200,00 €; CartaDiCredito
+08/04/2025;Costi;USCITE - Amici;Zoo;21,00 €; Unicredit
+08/04/2025;Costi;PIATTAFORME - Spotify;Aprile;10,99 €; Unicredit
+08/04/2025;Costi;SPESA - Delivery;Pizzeria;27,50 €; Unicredit
+11/04/2025;Costi;SALUTE - Farmaci;Farmacia;1,60 €; CartaDiCredito
+14/04/2025;Costi;INVESTIMENTI - Crypto;Binance;10,00 €; CartaDiCredito
+15/04/2025;Costi;SPESA - Quotidiana;Don Carlos;17,00 €; CartaDiCredito
+17/04/2025;Costi;AG.ENTRATE - Rateizzo II;Febbraio;37,46 €;
+17/04/2025;Costi;SPESA - Quotidiana;Decò;11,27 €; CartaDiCredito
+17/04/2025;Costi;SALUTE - Farmaci;;4,10 €; CartaDiCredito
+19/04/2025;Costi;SPESA - Delivery;San Giuseppe;70,00 €; CartaDiCredito
+20/04/2025;Costi;SPESA - Quotidiana;Decò;9,76 €;
+22/04/2025;Ricavi;Stipendio;Aprile;2.897,01 €; Unicredit
+22/04/2025;Costi;FAMIGLIA - Vestiti;Borsa Anna;99,00 €; CartaDiCredito
+22/04/2025;Costi;INVESTIMENTI - Crypto;Binance;10,00 €; CartaDiCredito
+22/04/2025;Costi;USCITE - Ristoranti;Marcianise;120,00 €; CartaDiCredito
+23/04/2025;Costi;RISPARMI - Conto Deposito Peppe;Aprile;300,00 €; Unicredit
+23/04/2025;Costi;BANCA - Costi;Aprile;2,47 €; Unicredit
+23/04/2025;Costi;PERSONALI - Barbiere;Memme e Papà;30,00 €; Unicredit
+23/04/2025;Costi;SPESA - Delivery;Cornetti;7,50 €; Unicredit
+23/04/2025;Costi;SPESA - Quotidiana;Decò;10,49 €; Unicredit
+24/04/2025;Costi;SPESA - Quotidiana;Pescheria;16,61 €; Unicredit
+24/04/2025;Costi;SALUTE - Farmaci;;16,80 €; CartaDiCredito
+24/04/2025;Costi;SPESA - Quotidiana;;3,78 €; CartaDiCredito
+24/04/2025;Costi;INVESTIMENTI - SCC;Gazzabet;70,00 €; Revolut
+25/04/2025;Costi;VACANZE;Raffaele Marino Capranica;180,00 €; Unicredit
+25/04/2025;Costi;INVESTIMENTI - SCC;Gazzabet;30,00 €; Revolut
+26/04/2025;Costi;PIATTAFORME - Sony Playstation;Aprile;8,99 €; Paypal
+28/04/2025;Costi;AUTO - Pedaggi e Parcheggi;Tangenziale;2,00 €; Unicredit
+28/04/2025;Costi;SPESA - Quotidiana;Caffe;2,40 €; Unicredit
+28/04/2025;Costi;INVESTIMENTI - Crypto;Binance;25,00 €; CartaDiCredito
+28/04/2025;Costi;BENI - Tecnologia;Firme Digitali a Rimborso;59,78 €; CartaDiCredito
+28/04/2025;Costi;USCITE - Ristoranti;;5,00 €; CartaDiCredito
+28/04/2025;Costi;INVESTIMENTI - Crypto;Binance;10,00 €; CartaDiCredito
+28/04/2025;Ricavi;Proventi Bet;Gazzabet;70,00 €; Revolut
+28/04/2025;Ricavi;Assegno Unico;Marzo;54,00 €; Unicredit
+29/04/2025;Costi;PIATTAFORME - Netflix;;1,99 €; CartaDiCredito
+29/04/2025;Costi;INVESTIMENTI - SCC;Gazzabet;100,00 €; Revolut
+29/04/2025;Costi;SPESA - Pranzo Lavoro Fuori;Russo;10,00 €; Unicredit
+30/04/2025;Costi;UTENZE - Fonia Mobile;Vodafone;10,00 €; Unicredit
+30/04/2025;Costi;SPESA - Pranzo Lavoro Fuori;Bar Santobono;7,20 €; Unicredit
+30/04/2025;Costi;AUTO - Pedaggi e Parcheggi;Tangenziale;1,00 €; Unicredit
+30/04/2025;Costi;SPESA - Pranzo Lavoro Fuori;Di Ornato;4,00 €; Unicredit
+01/05/2025;Costi;UTENZE - Gas;Gennaio - Maggio II;54,30 €; Unicredit
+01/05/2025;Costi;UTENZE - Gas;Maggio II;96,72 €; Unicredit
+01/05/2025;Costi;SPESA - Pranzo Lavoro Fuori;Hotel Venere;32,50 €; Unicredit
+01/05/2025;Costi;USCITE - Amici;Pizzeria Capranica;54,00 €; Unicredit
+01/05/2025;Costi;PIATTAFORME - Disney+;Maggio;5,99 €; CartaDiCredito
+02/05/2025;Costi;BANCA - Costi;Aprile;4,00 €; Unicredit
+02/05/2025;Costi;BANCA - Mutuo Zia Annamaria;Maggio;724,02 €; Unicredit
+02/05/2025;Costi;USCITE - Amici;Capranica;35,00 €; CartaDiCredito
+03/05/2025;Costi;SPESA - Quotidiana;Deco;26,90 €; Unicredit
+03/05/2025;Costi;TOOLS - Microsoft;Maggio;14,35 €; CartaDiCredito
+03/05/2025;Costi;INVESTIMENTI - SCC;;10,00 €; CartaDiCredito
+03/05/2025;Costi;SPESA - Quotidiana;Decò;11,86 €; CartaDiCredito
+05/05/2025;Costi;AG.ENTRATE - Rottamazione;Febbraio III;295,44 €; Unicredit
+05/05/2025;Costi;SALUTE - Farmaci;;10,00 €; CartaDiCredito
+07/05/2025;Costi;SPESA - Pranzo Lavoro Fuori;;6,50 €; CartaDiCredito
+07/05/2025;Costi;SPESA - Pranzo Lavoro Fuori;Nonna Titti;7,00 €; CartaDiCredito
+07/05/2025;Costi;SPESA - Pranzo Lavoro Fuori;;0,90 €; CartaDiCredito
+07/05/2025;Costi;AUTO - Pedaggi e Parcheggi;Tangenziale;1,00 €; CartaDiCredito
+07/05/2025;Costi;PERSONALI - Vestiti;Camicia;35,00 €; CartaDiCredito
+08/05/2025;Costi;SPESA - Pranzo Lavoro Fuori;Bar Santobono;2,40 €; CartaDiCredito
+08/05/2025;Costi;SPESA - Quotidiana;Decò;9,30 €; CartaDiCredito
+09/05/2025;Costi;SPESA - Pranzo Lavoro Fuori;Bar;2,70 €; CartaDiCredito
+09/05/2025;Costi;RISPARMI - Conto Deposito Peppe;;100,00 €; CartaDiCredito
+12/05/2025;Costi;SPESA - Quotidiana;Decò;9,30 €; CartaDiCredito
+12/05/2025;Costi;SPESA - Quotidiana;Bar;2,70 €; CartaDiCredito
+12/05/2025;Costi;INVESTIMENTI - SCC;;100,00 €; CartaDiCredito
+12/05/2025;Costi;INVESTIMENTI - Crypto;Solana;10,00 €; CartaDiCredito
+12/05/2025;Costi;FAMIGLIA - Vestiti;Scarpe;18,00 €; CartaDiCredito
+13/05/2025;Costi;PERSONALI - Vestiti;Harmont Blaine;217,19 €; CartaDiCredito
+13/05/2025;Costi;USCITE - Ristoranti;;9,00 €; CartaDiCredito
+13/05/2025;Costi;BENI - Acquisti Casa;Cinesi;26,60 €; CartaDiCredito
+13/05/2025;Costi;AUTO - Pedaggi e Parcheggi;;1,00 €; CartaDiCredito
+13/05/2025;Costi;USCITE - Ristoranti;;6,50 €; CartaDiCredito
+14/05/2025;Costi;SALUTE - Farmaci;;13,90 €; CartaDiCredito
+14/05/2025;Costi;SPESA - Quotidiana;Decò;11,55 €; CartaDiCredito
+16/05/2025;Costi;INVESTIMENTI - Crypto;Solana;10,00 €; CartaDiCredito
+19/05/2025;Costi;RISPARMI - Conto Deposito Peppe;Revolut**9604*;11,00 €; CartaDiCredito
+19/05/2025;Costi;INVESTIMENTI - Crypto;Bifinity;10,00 €; CartaDiCredito
+19/05/2025;Costi;SPESA - Quotidiana;DECO';14,88 €; CartaDiCredito
+19/05/2025;Costi;INVESTIMENTI - SCC;E-Play24 ITA Ltd;30,00 €; CartaDiCredito
+19/05/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+19/05/2025;Costi;USCITE - Ristoranti;GE.CO S.N.C. DI RUOCCO;2,40 €; CartaDiCredito
+20/05/2025;Costi;VACANZE;NOVOTEL PARMA CENTRO;74,00 €; CartaDiCredito
+21/05/2025;Costi;INVESTIMENTI - Crypto;Bifinity;25,00 €; CartaDiCredito
+21/05/2025;Costi;SPESA - Quotidiana;DECO';5,98 €; CartaDiCredito
+21/05/2025;Costi;FAMIGLIA - Giocattoli;EMAZING TOYS STORE;8,00 €; CartaDiCredito
+21/05/2025;Costi;USCITE - Ristoranti;BAR MEDIOPADANA;12,30 €; CartaDiCredito
+21/05/2025;Costi;SPESA - Quotidiana;SALUMERIA VERDI SRL;75,00 €; CartaDiCredito
+23/05/2025;Ricavi;Stipendio;Maggio;2.895,00 €; Unicredit
+23/05/2025;Costi;UTENZE - Gas;PAYPAL *MOONEY HERA - Aprile;224,06 €; CartaDiCredito
+23/05/2025;Costi;USCITE - Ristoranti;BAR PUNTO RISTORO SAGI;1,80 €; CartaDiCredito
+25/05/2025;Costi;INVESTIMENTI - SCC;;25,00 €; CartaDiCredito
+26/05/2025;Costi;RISPARMI - Conto Deposito Peppe;Maggio;300,00 €; Unicredit
+26/05/2025;Costi;TOOLS - Microsoft;Microsoft-G093772570;14,35 €; CartaDiCredito
+26/05/2025;Costi;INVESTIMENTI - Crypto;Bifinity;10,00 €; CartaDiCredito
+26/05/2025;Costi;FAMIGLIA - Giocattoli;EMAZING TOYS STORE;17,12 €; CartaDiCredito
+26/05/2025;Costi;USCITE - Ristoranti;BAR SGAMBATI;9,50 €; CartaDiCredito
+28/05/2025;Costi;USCITE - Ristoranti;Maggio;300,00 €; CartaDiCredito
+28/05/2025;Ricavi;Contributo Cibo;Maggio;300,00 €;
+28/05/2025;Ricavi;Proventi Bet;Maggio;100,00 €; Unicredit
+28/05/2025;Costi;AUTO - Assicurazione;I° Semestre;600,00 €;
+28/05/2025;Ricavi;Contributo Assicurazione;2025;600,00 €;
+28/05/2025;Ricavi;Assegno Unico;apr-25;54,00 €; Unicredit
+28/05/2025;Costi;PIATTAFORME - Netflix;NETFLIX.COM;6,99 €; CartaDiCredito
+30/05/2025;Costi;USCITE - Ristoranti;Pompei;58,00 €; Unicredit
+30/05/2025;Ricavi;Contributo Cibo;;58,00 €; Unicredit
+01/06/2025;Costi;UTENZE - Gas;Gennaio - Maggio III;54,30 €; Unicredit
+01/06/2025;Costi;UTENZE - Gas;Maggio III;96,72 €; Unicredit
+02/06/2025;Costi;BANCA - Costi;MY GENIUS: COSTO FISSO MESE DI MAGGIO 2025;4,00 €; Unicredit
+03/06/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 30/05/2025CARTA *1156    DI EUR            2,40             NEO CAFFE' SRL                                    Casoria;2,40 €; Unicredit
+03/06/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 29/05/2025CARTA *1156    DI EUR            2,20             SOUL BAR                                          NAPOLI;2,20 €; Unicredit
+03/06/2025;Costi;BANCA - Mutuo Zia Annamaria;PAGAMENTO RATA MUTUO/PRESTITO                     PAGAMENTO RATA N. 23 DEL FINANZIAMENTO 000/2295949/000 DI UNICREDIT SPA DI CUI INTERESSI EURO 514,67 E ONERI/ASSICURAZIONI EURO 3,00;724,02 €; Unicredit
+03/06/2025;Costi;PIATTAFORME - Disney+;Google Play Apps;5,99 €; CartaDiCredito
+03/06/2025;Costi;SPESA - Quotidiana;LATTICINI SANTA MARIA;19,00 €; CartaDiCredito
+03/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;10,00 €; CartaDiCredito
+05/06/2025;Ricavi;Contributo Beni;BONIFICO A VOSTRO FAVORE                          BONIFICO SEPA DA:                                 A.O.DI RILIEVO NAZIONALE SANTOBONO                PAUSI                                             PER: RIMBORSO ACQUISTO DI FIRMA MASSIVA           TRAMITE CASSA ECONOMALE                           COMM:             0,00 SPESE:             0,00    COMM SERV:             0,00                       TRN:1201251560491573;59,78 €; Unicredit
+05/06/2025;Costi;PERSONALI - Lavoro;NAPOLI HFB ECO;14,30 €; CartaDiCredito
+05/06/2025;Costi;UTENZE - Fonia Mobile;WIND TRE PRODOTTI E SE;56,98 €; CartaDiCredito
+06/06/2025;Costi;BENI - Acquisti Casa;IPERBAZAR;2,80 €; CartaDiCredito
+06/06/2025;Costi;BENI - Tecnologia;W3;215,00 €; CartaDiCredito
+06/06/2025;Costi;UTENZE - Fonia Mobile;WINDTRE*ASSICURA;7,99 €; CartaDiCredito
+06/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;25,00 €; CartaDiCredito
+06/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;15,00 €; CartaDiCredito
+06/06/2025;Costi;INVESTIMENTI - SCC;Microgame Www.;60,00 €; Revolut
+08/06/2025;Costi;INVESTIMENTI - SCC;Microgame;60,00 €; Revolut
+09/06/2025;Ricavi;Regali vari;VERSAMENTO SU SPORTELLO AUTOMATICO                ATM NUM. 03862 CARTA 73549115                     VERSAMENTO DEL 09.06.2025 ALLE 19:25              REGALI FESTE VARIE;420,00 €; Unicredit
+09/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;10,00 €; CartaDiCredito
+09/06/2025;Costi;INVESTIMENTI - Crypto;FARMACIA COPPOLA;30,60 €; CartaDiCredito
+09/06/2025;Costi;SPESA - Quotidiana;DECO';18,13 €; CartaDiCredito
+09/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;15,00 €; CartaDiCredito
+09/06/2025;Costi;INVESTIMENTI - SCC;Microgame;58,00 €; Revolut
+10/06/2025;Ricavi;Proventi Bet;BONIFICO A VOSTRO FAVORE                          BONIFICO SEPA DA:                                 BOLTTECH DEVICE PROTECTION (IT) SRL               PER: 8021000027401                                COMM:             0,00 SPESE:             0,00    COMM SERV:             0,00                       TRN:1001251618050487;0,10 €; Unicredit
+10/06/2025;Ricavi;Proventi Bet;BONIFICO A VOSTRO FAVORE                          BONIFICO ISTANTANEO DEL 09.06.2025 ALLE 22.47.04  DA: Giuseppe D.Anna                               PER: Sent from Revolut - Giroconto                TRN: 1091251607943546                             COMM:                                             COMM SERV:;75,00 €; Unicredit
+10/06/2025;Ricavi;Contributo Anna;BONIFICO A VOSTRO FAVORE                          BONIFICO ISTANTANEO DEL 09.06.2025 ALLE 22.42.00  DA: STARACE ANNA                                  PER: Spese casa                                   TRN: 1291251607941944                             COMM:;620,00 €; Unicredit
+10/06/2025;Costi;SPESA - Quotidiana;DECO';7,49 €; CartaDiCredito
+10/06/2025;Costi;SPESA - Quotidiana;NONNA MATI SRL;22,51 €; CartaDiCredito
+10/06/2025;Costi;INVESTIMENTI - SCC;Scommettendo;42,00 €; Revolut
+11/06/2025;Costi;PIATTAFORME - Spotify;ADDEBITO SEPA DD PER FATTURA A VOSTRO CARICO      Incasso 1042754946969                             SDD da LU96ZZZ0000000000000000058                 PayPal Europe S.a.r.l. et Cie S.C.A               mandato nr. 52N2224VZTXEJ                         Per 1042754946969/PAYPAL;9,99 €; Unicredit
+11/06/2025;Costi;SPESA - Quotidiana;DECO';18,23 €; CartaDiCredito
+12/06/2025;Costi;AG.ENTRATE - Rottamazione;Rottamazione Rata;886,32 €; Unicredit
+12/06/2025;Ricavi;Contributo Cibo;Buoni Pasto Giugno;87,72 €; Buoni Pasto
+13/06/2025;Costi;PERSONALI - Vestiti;ABBIGLIAMENTO MODERNO;178,00 €; CartaDiCredito
+13/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;25,00 €; CartaDiCredito
+13/06/2025;Costi;PERSONALI - Lavoro;PAYPAL *PAG PUB AMM;21,50 €; CartaDiCredito
+16/06/2025;Costi;USCITE - Ristoranti;TRATTORIA DA EMILIA;86,00 €; CartaDiCredito
+16/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;10,00 €; CartaDiCredito
+16/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;15,00 €; CartaDiCredito
+17/06/2025;Costi;USCITE - Ristoranti;OASI SALTIMBOCCA DI MA;18,00 €; CartaDiCredito
+18/06/2025;Costi;SPESA - Quotidiana;SOLE 365;23,06 €; CartaDiCredito
+18/06/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;-1,00 €; CartaDiCredito
+19/06/2025;Costi;INVESTIMENTI - SCC;Scommettendo;80,00 €; Revolut
+20/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;25,00 €; CartaDiCredito
+21/06/2025;Ricavi;Assegno Unico;Giugno;54,00 €; Unicredit Miky
+23/06/2025;Costi;VACANZE;LIDO BERLINO;23,00 €; CartaDiCredito
+23/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;10,00 €; CartaDiCredito
+23/06/2025;Costi;SPESE - Diana;ZOOMARINE DI FRANCESC;5,00 €; CartaDiCredito
+23/06/2025;Costi;SPESE - Diana;ZOOMARINE DI FRANCESC;50,00 €; CartaDiCredito
+23/06/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;-1,00 €; CartaDiCredito
+23/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;15,00 €; CartaDiCredito
+23/06/2025;Costi;INVESTIMENTI - SCC;Microgame Www.;32,00 €; Revolut
+24/06/2025;Ricavi;Stipendio;VOSTRI EMOLUMENTI                                 STIPENDIO MESE GIUGNO     25                      O.C. A.O.DI RILIEVO NAZIONALE SANTOBONO;2.899,06 €; Unicredit
+24/06/2025;Costi;SPESA - Quotidiana;LATTICINI SANTA MARIA;12,00 €; CartaDiCredito
+24/06/2025;Costi;SPESA - Quotidiana;NONNA MATI SRL;37,89 €; CartaDiCredito
+25/06/2025;Costi;INVESTIMENTI - SCC;DISPOSIZIONE DI BONIFICO                          BONIFICO ISTANTANEO DEL 25.06.2025 ALLE 09.21.01  A: GIUSEPPE D'ANNA (REV)                          PER: Trasferimento Conto Personale                TRN: 1191251765545034                             COMM: 2.47                                        COMM SERV:;202,00 €; Unicredit
+25/06/2025;Costi;RISPARMI - Conto Deposito Peppe;DISPOSIZIONE DI BONIFICO                          BONIFICO ISTANTANEO DEL 25.06.2025 ALLE 09.21.01  A: GIUSEPPE D'ANNA (REV)                          PER: Trasferimento Conto Personale                TRN: 1191251765545034                             COMM: 2.47                                        COMM SERV:;300,00 €; Unicredit
+26/06/2025;Costi;FAMIGLIA - Miky;SumUp  *Acconciature m;10,00 €; CartaDiCredito
+27/06/2025;Costi;FAMIGLIA - Feste;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 25/06/2025CARTA *1156    DI EUR           54,50             IL TRANCIO DI DIAMETRO                            CASORIA;54,50 €; Unicredit
+27/06/2025;Costi;SALUTE - Visite;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 25/06/2025CARTA *1156    DI EUR          222,00             Sum*Dott.Cangiano Augu                            Napoli;222,00 €; Unicredit
+27/06/2025;Costi;PIATTAFORME - Sony Playstation;ADDEBITO SEPA DD PER FATTURA A VOSTRO CARICO      Incasso 1043106002944                             SDD da LU96ZZZ0000000000000000058                 PayPal Europe S.a.r.l. et Cie S.C.A               mandato nr. 52N2224VZTXEJ                         Per 1043106002944/PAYPAL;8,99 €; Unicredit
+27/06/2025;Costi;SPESA - Quotidiana;Buoni Pasto Giugno;82,56 €; Buoni Pasto
+27/06/2025;Costi;SPESA - Quotidiana;SOUL BAR;6,40 €; CartaDiCredito
+27/06/2025;Costi;SPESA - Quotidiana;COFFEE ISLAND;3,00 €; CartaDiCredito
+27/06/2025;Costi;PERSONALI - Vestiti;PAYPAL *PAGA IN 3 RATE;66,00 €; CartaDiCredito
+27/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;25,00 €; CartaDiCredito
+29/06/2025;Costi;INVESTIMENTI - SCC;Microgame Www.;150,00 €; Revolut
+30/06/2025;Costi;PIATTAFORME - Netflix;NETFLIX.COM;6,99 €; CartaDiCredito
+30/06/2025;Costi;TOOLS - Microsoft;Microsoft-G098873179;14,35 €; CartaDiCredito
+30/06/2025;Costi;INVESTIMENTI - Crypto;Bifinity;15,00 €; CartaDiCredito
+01/07/2025;Costi;BANCA - Costi;MY GENIUS: COSTO FISSO MESE DI LUGLIO 2025;4,00 €; Unicredit
+01/07/2025;Costi;SPESA - Quotidiana;DECO';18,77 €; Unicredit
+01/07/2025;Costi;BANCA - Mutuo Zia Annamaria;Mutuo Luglio;724,02 €; Unicredit
+01/07/2025;Costi;BANCA - Costi;MY GENIUS: COSTO FISSO MESE DI GIUGNO 2025;4,00 €; Unicredit
+01/07/2025;Ricavi;Buoni Pasto;Luglio;54,00 €; Unicredit Miky
+01/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+01/07/2025;Costi;SPESA - Pranzo Lavoro Fuori;Espresso Mat;5,00 €; Revolut
+02/07/2025;Costi;SPESA - Quotidiana;COFFEE ISLAND;3,00 €; Unicredit
+02/07/2025;Costi;SPESA - Quotidiana;Neo Caffe;2,40 €; Unicredit
+02/07/2025;Costi;AUTO - Pedaggi e Parcheggi;Tangenziale;1,00 €; Unicredit
+02/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+03/07/2025;Costi;USCITE - Ristoranti;COFFEE ISLAND;3,00 €; Unicredit
+03/07/2025;Costi;PIATTAFORME - Disney+;GOOGLE*GOOGLE PLAY APP;5,99 €; CartaDiCredito
+03/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+04/07/2025;Costi;USCITE - Ristoranti;COFFEE ISLAND;3,00 €; Unicredit
+04/07/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+04/07/2025;Costi;INVESTIMENTI - Crypto;Bifinity;25,00 €; CartaDiCredito
+04/07/2025;Costi;AG.ENTRATE - Rateizzo I;PAYPAL *PAG PUB AMM;47,05 €; CartaDiCredito
+04/07/2025;Costi;UTENZE - Gas;PAYPAL *PAGA IN 3 RATE;30,98 €; CartaDiCredito
+04/07/2025;Costi;UTENZE - Gas;PAYPAL *PAGA IN 3 RATE;90,30 €; CartaDiCredito
+04/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+05/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+06/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+07/07/2025;Costi;SPESA - Quotidiana;Bar;3,60 €; Unicredit
+07/07/2025;Costi;SPESA - Quotidiana;LATTICINI SANTA MARIA;15,00 €; Unicredit
+07/07/2025;Costi;SPESA - Quotidiana;DECO';1,31 €; Unicredit
+07/07/2025;Costi;SPESA - Quotidiana;DECO';17,24 €; Unicredit
+07/07/2025;Costi;AUTO - Pedaggi e Parcheggi;Tangenziale;1,00 €; Unicredit
+07/07/2025;Costi;USCITE - Ristoranti;Sandro Pizzettata;3,50 €; Unicredit
+07/07/2025;Costi;USCITE - Ristoranti;Bar;4,50 €; Unicredit
+07/07/2025;Costi;INVESTIMENTI - Crypto;Bifinity;10,00 €; CartaDiCredito
+07/07/2025;Costi;UTENZE - Fonia Mobile;WINDTRE*ASSICURA;7,99 €; CartaDiCredito
+07/07/2025;Costi;PERSONALI - Barbiere;SumUp  *Acconciature m;20,00 €; CartaDiCredito
+07/07/2025;Costi;BENI - Tecnologia;AMZN Mktp IT*I40LW28L5;230,27 €; CartaDiCredito
+07/07/2025;Costi;INVESTIMENTI - Crypto;Bifinity;15,00 €; CartaDiCredito
+07/07/2025;Costi;UTENZE - Fonia Mobile;WIND TRE PRODOTTI E SE;141,63 €; CartaDiCredito
+07/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+08/07/2025;Costi;USCITE - Ristoranti;Bar;1,20 €; Unicredit
+08/07/2025;Costi;USCITE - Ristoranti;Bar;24,10 €; Unicredit
+08/07/2025;Costi;USCITE - Ristoranti;Bar;2,40 €; Unicredit
+08/07/2025;Costi;SPESA - Delivery;La Terrazza;29,00 €; Unicredit
+08/07/2025;Costi;USCITE - Ristoranti;Fonte Village;9,50 €; Unicredit
+08/07/2025;Costi;USCITE - Ristoranti;Fonte Village;47,00 €; Unicredit
+08/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+09/07/2025;Costi;SPESA - Quotidiana;DECO';0,10 €; CartaDiCredito
+09/07/2025;Costi;SPESA - Quotidiana;DECO';18,52 €; CartaDiCredito
+09/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+09/07/2025;Costi;SPESA - Pranzo Lavoro Fuori;Espresso Mat;5,00 €; Revolut
+10/07/2025;Ricavi;Regali vari;Regali Feste;230,00 €; Unicredit
+10/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+11/07/2025;Costi;PERSONALI - Lavoro;UNICREDIT  ATM N.4364;150,00 €; CartaDiCredito
+11/07/2025;Costi;PERSONALI - Lavoro;UNICREDIT  ATM N.4364;6,00 €; CartaDiCredito
+11/07/2025;Costi;BENI - Acquisti Casa;AMZN Mktp IT;-1,25 €; CartaDiCredito
+11/07/2025;Costi;BENI - Acquisti Casa;AMZN Mktp IT;-1,24 €; CartaDiCredito
+11/07/2025;Costi;BENI - Acquisti Casa;AMZN Mktp IT;-1,25 €; CartaDiCredito
+11/07/2025;Costi;SALUTE - Farmaci;FARMACIA COPPOLA;15,08 €; CartaDiCredito
+11/07/2025;Costi;SPESA - Quotidiana;DECO';12,65 €; CartaDiCredito
+11/07/2025;Costi;USCITE - Amici;COFFEE ISLAND;3,00 €; CartaDiCredito
+11/07/2025;Costi;INVESTIMENTI - Crypto;Bifinity;25,00 €; CartaDiCredito
+11/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+12/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+12/07/2025;Costi;USCITE - Amici;This Is Wonderland;37,00 €; Revolut
+13/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+14/07/2025;Costi;USCITE - Amici;BAR TICO MANIA;11,20 €; CartaDiCredito
+14/07/2025;Costi;RISPARMI - Conto Deposito Peppe;Revolut**6063*;40,00 €; CartaDiCredito
+14/07/2025;Costi;INVESTIMENTI - Crypto;Bifinity;10,00 €; CartaDiCredito
+14/07/2025;Costi;USCITE - Amici;NEO CAFFE' SRL;6,50 €; CartaDiCredito
+14/07/2025;Costi;SPESA - Quotidiana;DECO';20,28 €; CartaDiCredito
+14/07/2025;Costi;USCITE - Amici;NEO CAFFE' SRL;3,50 €; CartaDiCredito
+14/07/2025;Costi;SPESA - Quotidiana;DECO';18,56 €; CartaDiCredito
+14/07/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+14/07/2025;Costi;INVESTIMENTI - Crypto;Bifinity;15,00 €; CartaDiCredito
+14/07/2025;Ricavi;Buoni Pasto;Luglio;77,40 €; Buoni Pasto
+14/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+15/07/2025;Costi;SPESA - Quotidiana;DECO';32,69 €; CartaDiCredito
+15/07/2025;Costi;SPESA - Quotidiana;PESCHERIA BOCCHETTI;25,00 €; CartaDiCredito
+15/07/2025;Costi;USCITE - Amici;PAYPAL *misterfazio;45,00 €; CartaDiCredito
+15/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+16/07/2025;Costi;AUTO - Pedaggi e Parcheggi;Tangenziale;1,00 €; CartaDiCredito
+16/07/2025;Costi;SPESA - Pranzo Lavoro Fuori;Nonna Titti;6,00 €; CartaDiCredito
+16/07/2025;Costi;SPESA - Delivery;Cornetti;11,50 €; CartaDiCredito
+16/07/2025;Costi;SPESA - Pranzo Lavoro Fuori;LA PADELLA;11,30 €; CartaDiCredito
+16/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+17/07/2025;Costi;SPESA - Quotidiana;SOLE 365;0,48 €; CartaDiCredito
+17/07/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+17/07/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+17/07/2025;Costi;HOBBY - Sport;PAYPAL *PAGA IN 3 RATE;201,59 €; CartaDiCredito
+17/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+18/07/2025;Costi;SALUTE - Farmaci;FARMACIA COPPOLA;13,00 €; CartaDiCredito
+18/07/2025;Costi;SPESA - Delivery;LA SCIMMIETTA;11,00 €; CartaDiCredito
+18/07/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+18/07/2025;Costi;SPESA - Pranzo Lavoro Fuori;ALL FOR ONE SAS;9,50 €; CartaDiCredito
+18/07/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+18/07/2025;Costi;INVESTIMENTI - Crypto;Bifinity;25,00 €; CartaDiCredito
+18/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €; Revolut
+19/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+20/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €; Revolut
+21/07/2025;Ricavi;Proventi Bet;Revolut Giroconto;55,00 €; Unicredit
+21/07/2025;Costi;INVESTIMENTI - Crypto;Bifinity;10,00 €; CartaDiCredito
+21/07/2025;Costi;PERSONALI - Barbiere;SumUp  *Acconciature m;20,00 €; CartaDiCredito
+21/07/2025;Costi;SPESA - Quotidiana;LATTICINI SANTA MARIA;9,00 €; CartaDiCredito
+21/07/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+21/07/2025;Costi;USCITE - Amici;BAR PUNTO RISTORO SAGI;1,80 €; CartaDiCredito
+21/07/2025;Costi;USCITE - Amici;COFFEE ISLAND;3,00 €; CartaDiCredito
+21/07/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+21/07/2025;Costi;INVESTIMENTI - Crypto;Bifinity;15,00 €; CartaDiCredito
+21/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+22/07/2025;Ricavi;Stipendio;Stipendio Luglio;2.830,49 €; Unicredit
+22/07/2025;Ricavi;Premio Produzione;lug-05;1.840,00 €; Unicredit
+22/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €; Revolut
+22/07/2025;Costi;USCITE - Ristoranti;Sandropizzettata;4,50 €; Revolut
+22/07/2025;Costi;AUTO - Pedaggi e Parcheggi;tangenzialedinapoli.it;1,00 €; Revolut
+23/07/2025;Costi;RISPARMI - Conto Deposito Peppe;Revolut Giroconto;300,00 €; Unicredit
+23/07/2025;Costi;BANCA - Costi;Costo Bonifico;2,47 €; Unicredit
+23/07/2025;Costi;INVESTIMENTI - SCC;Terzo Pilastro;200,00 €; Unicredit
+23/07/2025;Costi;SPESA - Delivery;LA SCIMMIETTA;21,00 €; CartaDiCredito
+23/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+24/07/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+24/07/2025;Costi;USCITE - Amici;BINARIO BORBONICO;24,83 €; CartaDiCredito
+24/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+25/07/2025;Costi;USCITE - Ristoranti;Bar;16,70 €; Unicredit
+25/07/2025;Costi;SPESA - Quotidiana;DECO';10,79 €; Unicredit
+25/07/2025;Costi;SPESA - Quotidiana;Spesa Genepesca;12,19 €; Unicredit
+25/07/2025;Costi;AG.ENTRATE - Rateizzo II;Rateizzo;112,37 €; Unicredit
+25/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+26/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+27/07/2025;Costi;PERSONALI - Vestiti;PAYPAL *PAGA IN 3 RATE;66,00 €; CartaDiCredito
+27/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+28/07/2025;Ricavi;Contributo Beni;Cassa Economale Contributo Acquisti;230,27 €; Unicredit
+28/07/2025;Costi;USCITE - Amici;Bar;0,90 €; Unicredit
+28/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+29/07/2025;Costi;USCITE - Ristoranti;OASI SALTIMBOCCA DI MA;21,00 €; Unicredit
+29/07/2025;Costi;PIATTAFORME - Sony Playstation;Sony;8,99 €; Unicredit
+29/07/2025;Costi;PIATTAFORME - Netflix;NETFLIX.COM;6,99 €; Unicredit
+29/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+30/07/2025;Costi;FAMIGLIA - Vestiti;Magliette Napoli;55,00 €; Unicredit
+30/07/2025;Costi;BENI - Acquisti Casa;Regali Bici Memme;135,00 €; Unicredit
+30/07/2025;Costi;AUTO - Pedaggi e Parcheggi;Tangenziale;1,00 €; Unicredit
+30/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+31/07/2025;Costi;UTENZE - Cloud;Abbonamento Capcut;11,99 €; Unicredit
+31/07/2025;Costi;SPESA - Quotidiana;Luglio;77,40 €; Buoni Pasto
+31/07/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+01/08/2025;Costi;SPESA - Pranzo Lavoro Fuori;NONNA MATI SRL;7,00 €; Unicredit
+01/08/2025;Costi;AUTO - Pedaggi e Parcheggi;Tangenziale;1,00 €; Unicredit
+01/08/2025;Costi;BENI - Tecnologia;Beni Santobono;298,32 €; Unicredit
+01/08/2025;Costi;BANCA - Mutuo Zia Annamaria;Rata Agosto;724,02 €; Unicredit
+01/08/2025;Ricavi;Assegno Unico;Agosto;54,00 €; Unicredit Miky
+01/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+01/08/2025;Costi;UTENZE - Gas;PAYPAL *PAGA IN 3 RATE;30,98 €; CartaDiCredito
+01/08/2025;Costi;UTENZE - Gas;PAYPAL *PAGA IN 3 RATE;90,31 €; CartaDiCredito
+01/08/2025;Costi;PIATTAFORME - Disney+;Google Play Apps;5,99 €; CartaDiCredito
+02/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+02/08/2025;Costi;FAMIGLIA - Vestiti;PAYPAL *PAGA IN 3 RATE;66,00 €; CartaDiCredito
+02/08/2025;Costi;INVESTIMENTI - Crypto;Bifinity;10,00 €; CartaDiCredito
+02/08/2025;Costi;TOOLS - Microsoft;Microsoft°G103918929;14,35 €; CartaDiCredito
+03/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+03/08/2025;Costi;UTENZE - Fonia Mobile;WIND TRE PRODOTTI E SE;114,89 €; CartaDiCredito
+04/08/2025;Costi;SPESA - Delivery;NONNA MATI SRL;4,80 €; Unicredit
+04/08/2025;Costi;SPESA - Delivery;NONNA MATI SRL;14,30 €; Unicredit
+04/08/2025;Costi;AUTO - Pedaggi e Parcheggi;Tangenziale;1,00 €; Unicredit
+04/08/2025;Costi;SPESA - Delivery;Bar Sagi;2,30 €; Unicredit
+04/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+04/08/2025;Costi;UTENZE - Fonia Mobile;WINDTRE*ASSICURA;7,99 €; CartaDiCredito
+05/08/2025;Costi;SPESA - Quotidiana;DECO';14,98 €; Unicredit
+05/08/2025;Costi;SALUTE - Farmaci;Farmacia Mandaci;13,40 €; Unicredit
+05/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+05/08/2025;Costi;SPESA - Quotidiana;Espresso Mat;5,00 €; Revolut
+05/08/2025;Costi;INVESTIMENTI - Crypto;Bifinity;25,00 €; CartaDiCredito
+05/08/2025;Costi;AG.ENTRATE - Rottamazione;PAYPAL *PAG PUB AMM;886,29 €; CartaDiCredito
+05/08/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+06/08/2025;Costi;SPESA - Delivery;Gelateria;23,00 €; Unicredit
+06/08/2025;Costi;SPESA - Delivery;Gelateria;15,00 €; Unicredit
+06/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+06/08/2025;Costi;INVESTIMENTI - SCC;Bifinity;15,00 €; CartaDiCredito
+06/08/2025;Costi;INVESTIMENTI - SCC;Revolut**6063*;100,00 €; CartaDiCredito
+06/08/2025;Costi;FAMIGLIA - Vestiti;DECATHLON 00000412;102,24 €; CartaDiCredito
+06/08/2025;Costi;PERSONALI - Vestiti;ABBIGLIAMENTO MODERNO;138,00 €; CartaDiCredito
+06/08/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+06/08/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+06/08/2025;Costi;BENI - Tecnologia;AMZN Mktp IT*RV2LC7YQ4;47,26 €; CartaDiCredito
+07/08/2025;Costi;SPESA - Pranzo Lavoro Fuori;NONNA MATI SRL;21,00 €; Unicredit
+07/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+07/08/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+08/08/2025;Costi;BENI - Tecnologia;Beni Santobono;128,42 €; Unicredit
+08/08/2025;Costi;SPESA - Delivery;Amato Mauro;16,50 €; Unicredit
+08/08/2025;Costi;SPESA - Pranzo Lavoro Fuori;Bar Sagi;1,80 €; Unicredit
+08/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+08/08/2025;Costi;INVESTIMENTI - SCC;Revolut**6063*;57,01 €; CartaDiCredito
+08/08/2025;Costi;BANCA - Costi;COMMISSIONE EMISSIONE CAR;10,00 €; CartaDiCredito
+08/08/2025;Costi;PERSONALI - Vestiti;CAMICISSIMA;131,90 €; CartaDiCredito
+08/08/2025;Costi;PERSONALI - Vestiti;3585 Naples Mens;100,00 €; CartaDiCredito
+08/08/2025;Costi;SPESE - Diana;ZOOMARINE DI FRANCESC;53,00 €; CartaDiCredito
+08/08/2025;Costi;SPESA - Delivery;JustEatItaly;35,64 €; CartaDiCredito
+09/08/2025;Ricavi;Buoni Pasto;Luglio;72,24 €; Buoni Pasto
+09/08/2025;Costi;INVESTIMENTI - SCC;Google Pay top-up by *3035;57,01 €; Revolut
+09/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+09/08/2025;Costi;PERSONALI - Vestiti;ABBIGLIAMENTO MODERNO;18,00 €; CartaDiCredito
+09/08/2025;Costi;INVESTIMENTI - Crypto;Bifinity;10,00 €; CartaDiCredito
+10/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+11/08/2025;Costi;VACANZE;Lido Berlino;38,80 €; Unicredit
+11/08/2025;Costi;VACANZE;Panificio Caputo;30,00 €; Unicredit
+11/08/2025;Costi;PERSONALI - Barbiere;Nando;10,00 €; Unicredit
+11/08/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 08/08/2025CARTA *1156    DI EUR            1,00             CHALET CIRO                                       NAPOLI;1,00 €; Unicredit
+11/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+11/08/2025;Costi;INVESTIMENTI - SCC;Revolut**6063*;30,00 €; CartaDiCredito
+11/08/2025;Costi;SALUTE - Farmaci;FARMACIA VENENRI - DEV;33,00 €; CartaDiCredito
+11/08/2025;Costi;VACANZE;LIDO IL BRIGANTINO;2,50 €; CartaDiCredito
+12/08/2025;Costi;VACANZE;Caputo Luigi;47,45 €; Unicredit
+12/08/2025;Costi;PIATTAFORME - Spotify;Spotify;10,99 €; Unicredit
+12/08/2025;Costi;SPESA - Quotidiana;Etè;30,43 €; Unicredit
+12/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+12/08/2025;Costi;INVESTIMENTI - Crypto;Bifinity;25,00 €; CartaDiCredito
+13/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+13/08/2025;Costi;INVESTIMENTI - Crypto;Bifinity;15,00 €; CartaDiCredito
+14/08/2025;Costi;HOBBY - Calcio Napoli;Abbonamento Napoli;201,59 €; Unicredit
+14/08/2025;Costi;VACANZE;Lido Berlino;43,00 €; Unicredit
+14/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+14/08/2025;Costi;VACANZE;NON SOLO PANE;8,00 €; CartaDiCredito
+14/08/2025;Costi;VACANZE;DONNARUMMA BEACH SRLS;55,00 €; CartaDiCredito
+15/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+16/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+16/08/2025;Costi;VACANZE;HOTEL CLUB SANTA SABIN;19,50 €; CartaDiCredito
+16/08/2025;Costi;VACANZE;HOTEL CLUB SANTA SABIN;2,80 €; CartaDiCredito
+16/08/2025;Costi;INVESTIMENTI - Crypto;Bifinity;10,00 €; CartaDiCredito
+17/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+17/08/2025;Costi;VACANZE;HOTEL CLUB SANTA SABIN;4,10 €; CartaDiCredito
+18/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+18/08/2025;Ricavi;;Google Pay top-up by *3035;20,00 €; Revolut
+18/08/2025;Costi;INVESTIMENTI - SCC;Revolut**6063*;20,00 €; CartaDiCredito
+18/08/2025;Costi;VACANZE;JUST SMILE;14,00 €; CartaDiCredito
+19/08/2025;Costi;VACANZE;HoteL Torre Santa Sabina;1,30 €; Unicredit
+19/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+19/08/2025;Costi;INVESTIMENTI - SCC;PayPal;31,55 €; Revolut
+19/08/2025;Ricavi;INVESTIMENTI - SCC;Microgame Www,;12,10 €; Revolut
+19/08/2025;Costi;INVESTIMENTI - SCC;Revolut**6063*;19,00 €; CartaDiCredito
+19/08/2025;Costi;INVESTIMENTI - SCC;Revolut**6063*;30,00 €; CartaDiCredito
+20/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,10 €; Revolut
+21/08/2025;Costi;SALUTE - Farmaci;Farmacia Dora;30,80 €; Unicredit
+21/08/2025;Costi;VACANZE;HoteL Torre Santa Sabina;25,00 €; Unicredit
+21/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €; Revolut
+22/08/2025;Costi;RISPARMI - Conto Deposito Peppe;Revolut**6063*;300,00 €; Unicredit
+22/08/2025;Costi;BANCA - Costi;Bonifico;2,47 €; Unicredit
+22/08/2025;Ricavi;Stipendio;Agosto;2.904,25 €; Unicredit
+22/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+23/08/2025;Costi;INVESTIMENTI - SCC;bet365;30,00 €; Revolut
+23/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+24/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+25/08/2025;Costi;SPESA - Delivery;Gelateria;10,00 €; Unicredit
+25/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+26/08/2025;Costi;PIATTAFORME - Sony Playstation;ADDEBITO SEPA DD PER FATTURA A VOSTRO CARICO      Incasso 1044421350065                             SDD da LU96ZZZ0000000000000000058                 PayPal Europe S.a.r.l. et Cie S.C.A               mandato nr. 52N2224VZTXEJ                         Per 1044421350065/PAYPAL;8,99 €; Unicredit
+26/08/2025;Costi;SPESA - Quotidiana;Pescheria;42,47 €; Unicredit
+26/08/2025;Costi;SPESA - Quotidiana;DECO';20,05 €; Unicredit
+26/08/2025;Costi;SALUTE - Farmaci;Farmacia Maglione;57,27 €; Unicredit
+26/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+26/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Secondo Pilastro - SCC;0,01 €; Revolut
+27/08/2025;Costi;PERSONALI - Vestiti;PAYPAL *PAGA IN 3 RATE;66,00 €; CartaDiCredito
+27/08/2025;Costi;PIATTAFORME - Netflix;ADDEBITO SEPA DD PER FATTURA A VOSTRO CARICO      Incasso 1044448990348                             SDD da LU96ZZZ0000000000000000058                 PayPal Europe S.a.r.l. et Cie S.C.A               mandato nr. 52N2224VZTXEJ                         Per 1044448990348/PAYPAL;6,99 €; Unicredit
+27/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+27/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Secondo Pilastro - SCC;0,01 €; Revolut
+28/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+28/08/2025;Costi;INVESTIMENTI - SCC;Microgame Www,;50,00 €; Revolut
+29/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+29/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Secondo Pilastro - SCC;0,01 €; Revolut
+29/08/2025;Costi;INVESTIMENTI - SCC;Microgame Www,;37,00 €;
+29/08/2025;Costi;INVESTIMENTI - SCC;Microgame Www,;10,00 €;
+30/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €; Revolut
+31/08/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,09 €; Revolut
+01/09/2025;Costi;BANCA - Mutuo Zia Annamaria;PAGAMENTO RATA MUTUO/PRESTITO                     PAGAMENTO RATA N. 26 DEL FINANZIAMENTO 000/2295949/000 DI UNICREDIT SPA DI CUI INTERESSI EURO 512,37 E ONERI/ASSICURAZIONI EURO 3,00;724,02 €; Unicredit
+01/09/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 30/08/2025CARTA *1156    DI EUR           32,00             BAR ITALIA                                        PESCOCOSTANZO;32,00 €; Unicredit
+01/09/2025;Costi;BANCA - Costi;MY GENIUS: COSTO FISSO MESE DI AGOSTO 2025;4,00 €; Unicredit
+01/09/2025;Costi;UTENZE - Gas;PAYPAL *PAGA IN 3 RATE;30,98 €; CartaDiCredito
+01/09/2025;Costi;UTENZE - Gas;PAYPAL *PAGA IN 3 RATE;90,30 €; CartaDiCredito
+01/09/2025;Costi;TOOLS - App Smartphone;Google Play Apps;5,99 €; CartaDiCredito
+01/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+02/09/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 31/08/2025CARTA *1156    DI EUR           26,10             LATTICINI SANTA MARIA                             CASORIA;26,10 €; Unicredit
+02/09/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 31/08/2025CARTA *1156    DI EUR           19,54             DECO'                                             CASORIA;19,54 €; Unicredit
+02/09/2025;Costi;PIATTAFORME - Dazn;PAGAMENTO MASTERCARD E-Commerce del 30/08/2025    CARTA *1156    DI EUR            9,99             PAYPAL *DAZN DE                                   35314369001;9,99 €; Unicredit
+02/09/2025;Costi;TOOLS - App Smartphone;ADDEBITO SEPA DD PER FATTURA A VOSTRO CARICO      Incasso 1044530916847                             SDD da LU96ZZZ0000000000000000058                 PayPal Europe S.a.r.l. et Cie S.C.A               mandato nr. 52N2224VZTXEJ                         Per 1044530916847/PAYPAL;4,99 €; Unicredit
+02/09/2025;Costi;UTENZE - Fonia Mobile;WIND TRE PRODOTTI E SE;73,96 €; CartaDiCredito
+02/09/2025;Costi;INVESTIMENTI - SCC;Revolut**6063*;10,00 €; CartaDiCredito
+02/09/2025;Costi;INVESTIMENTI - SCC;Revolut**6063*;26,00 €; CartaDiCredito
+02/09/2025;Costi;SPESA - Quotidiana;DECO';16,94 €; CartaDiCredito
+02/09/2025;Costi;SALUTE - Farmaci;FARMACIA COPPOLA;11,00 €; CartaDiCredito
+02/09/2025;Costi;TOOLS - Microsoft;Microsoft-G109342752;14,35 €; CartaDiCredito
+02/09/2025;Ricavi;Buoni Pasto;Settembre;10,24 €; Buoni Pasto
+02/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+02/09/2025;Costi;INVESTIMENTI - SCC;To PayPal Europe S,a,r,l, et Cie S,C,A;50,00 €;
+03/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+03/09/2025;Costi;BENI - Tecnologia;Ricarica di Google Pay con *3035;26,00 €;
+03/09/2025;Costi;BENI - Tecnologia;Ricarica di Google Pay con *3035;10,00 €;
+03/09/2025;Costi;INVESTIMENTI - SCC;PayPal;56,92 €;
+04/09/2025;Ricavi;Contributo Beni;BONIFICO A VOSTRO FAVORE                          BONIFICO SEPA DA:                                 A.O.DI RILIEVO NAZIONALE SANTOBONO                PAUSI                                             PER: RIMBORSO ACQUISTO BADGE + 1 LETTORE          COMM:             0,00 SPESE:             0,00    COMM SERV:             0,00                       TRN:1201252470327620;298,32 €; Unicredit
+04/09/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+04/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+05/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+06/09/2025;Costi;SPESA - Quotidiana;LATTICINI SANTA MARIA;48,50 €; CartaDiCredito
+06/09/2025;Costi;SPESA - Quotidiana;DECO';109,75 €; CartaDiCredito
+06/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+07/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+08/09/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 04/09/2025CARTA *1156    DI EUR            5,40             BAR PUNTO RISTORO SAGI                            NAPOLI;5,40 €; Unicredit
+08/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+09/09/2025;Costi;SPESA - Quotidiana;SumUp  *Leone distribu;30,00 €; CartaDiCredito
+09/09/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+09/09/2025;Costi;SPESA - Quotidiana;MATTERA;0,60 €; CartaDiCredito
+09/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+10/09/2025;Costi;FAMIGLIA - Feste;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 08/09/2025CARTA *1156    DI EUR           28,50             COLMAYER FOOD                                     NAPOLI;28,50 €; Unicredit
+10/09/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 08/09/2025CARTA *1156    DI EUR           10,00             SOUL BAR                                          NAPOLI;10,00 €; Unicredit
+10/09/2025;Costi;SPESA - Quotidiana;DECO';14,02 €; CartaDiCredito
+10/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+11/09/2025;Costi;PIATTAFORME - Spotify;PAGAMENTO MASTERCARD E-Commerce del 09/09/2025    CARTA *1156    DI EUR           11,99             PAYPAL *SPOTIFY*P3A5D6                            35314369001;11,99 €; Unicredit
+11/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+12/09/2025;Costi;SALUTE - Farmaci;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 10/09/2025CARTA *1156    DI EUR           10,00             FARMACIA COPPOLA                                  CASORIA;10,00 €; Unicredit
+12/09/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 10/09/2025CARTA *1156    DI EUR            5,86             G. PESCA SRL                                      CASORIA NAPOL;5,86 €; Unicredit
+12/09/2025;Costi;BENI - Acquisti Personale;PAYPAL *PAGA IN 3 RATE;91,67 €; CartaDiCredito
+12/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+13/09/2025;Costi;SPESA - Pranzo Lavoro Fuori;DropPOS;89,00 €; CartaDiCredito
+13/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+14/09/2025;Costi;HOBBY - Calcio Napoli;PAYPAL *PAGA IN 3 RATE;201,59 €; CartaDiCredito
+14/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+15/09/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 11/09/2025CARTA *1156    DI EUR            3,40             LATTICINI SANTA MARIA                             CASORIA;3,40 €; Unicredit
+15/09/2025;Costi;USCITE - Amici;PINGUINO REALE;6,00 €; CartaDiCredito
+15/09/2025;Costi;USCITE - Amici;BLACKBURGER;90,00 €; CartaDiCredito
+15/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+15/09/2025;Costi;SPESA - Quotidiana;Espresso Mat;5,00 €;
+16/09/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 13/09/2025CARTA *1156    DI EUR           35,00             LATTICINI SANTA MARIA                             CASORIA;35,00 €; Unicredit
+16/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+17/09/2025;Costi;UTENZE - Fonia Mobile;W3;15,00 €; CartaDiCredito
+17/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+18/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+19/09/2025;Costi;SALUTE - Farmaci;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 17/09/2025CARTA *1156    DI EUR           16,83             FARMACIA MAGLIONE ALFO                            CASORIA;16,83 €; Unicredit
+19/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+20/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+21/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+22/09/2025;Costi;HOBBY - Formazione;PRELIEVO MASTERCARD DEL 22/09/25 CARTA *1156 UNICREDIT ATM 7920 CAB 03435 NAPOLI (NA) - VIA GIORDANO BRUNO, 172 A;40,00 €; Unicredit
+22/09/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 18/09/2025CARTA *1156    DI EUR           15,00             BAR SGAMBATI                                      CASORIA;15,00 €; Unicredit
+22/09/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 19/09/2025CARTA *1156    DI EUR           10,38             DECO'                                             CASORIA;10,38 €; Unicredit
+22/09/2025;Costi;SPESA - Quotidiana;SumUp  *MARKET A MERGE;1,00 €; CartaDiCredito
+22/09/2025;Costi;SPESA - Quotidiana;MATTERA;3,80 €; CartaDiCredito
+22/09/2025;Costi;HOBBY - Formazione;UNICREDIT  ATM N.7920;180,00 €; CartaDiCredito
+22/09/2025;Costi;AG.ENTRATE - Conguaglio 730;UNICREDIT  ATM N.7920;7,20 €; CartaDiCredito
+22/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+22/09/2025;Costi;SPESA - Quotidiana;Pagamento a favore di FEDERICA MALINCONICO;5,00 €;
+23/09/2025;Ricavi;Stipendio;VOSTRI EMOLUMENTI                                 STIPENDIO MESE SETTEMBRE  25                      O.C. A.O.DI RILIEVO NAZIONALE SANTOBONO;2.905,28 €; Unicredit
+23/09/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 21/09/2025CARTA *1156    DI EUR            7,00             GELATERIA DEL GALLO                               NAPOLI;7,00 €; Unicredit
+23/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+23/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Secondo Pilastro - SCC;0,01 €;
+24/09/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 22/09/2025CARTA *1156    DI EUR            4,00             LA FOCACCIA                                       NAPOLI;4,00 €; Unicredit
+24/09/2025;Costi;RISPARMI - Conto Deposito Peppe;DISPOSIZIONE DI BONIFICO                          BONIFICO ISTANTANEO DEL 24.09.2025 ALLE 00.10.38  A: GIUSEPPE D'ANNA (REV)                          PER: Giroconto Risparmio                          TRN: 1191252671115032                             COMM: 2.47                                        COMM SERV:;302,47 €; Unicredit
+24/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €;
+24/09/2025;Costi;INVESTIMENTI - SCC;Scommettendo;101,00 €;
+25/09/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 23/09/2025CARTA *1156    DI EUR            7,00             CASA LOTTI                                        NAPOLI;7,00 €; Unicredit
+25/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €;
+26/09/2025;Costi;SALUTE - Farmaci;PAGAMENTO MASTERCARD Contactless del 24/09/2025   CARTA *1156    DI EUR           14,90             FARMACIA MAGLIONE ALFO                            CASORIA;14,90 €; Unicredit
+26/09/2025;Costi;USCITE - Amici;PAGAMENTO MASTERCARD Contactless del 24/09/2025   CARTA *1156    DI EUR            7,00             SANDROPIZZETTATA                                  NAPOLI;7,00 €; Unicredit
+26/09/2025;Costi;USCITE - Amici;PAGAMENTO MASTERCARD Contactless del 24/09/2025   CARTA *1156    DI EUR            7,00             SANDROPIZZETTATA                                  NAPOLI;7,00 €; Unicredit
+26/09/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 24/09/2025CARTA *1156    DI EUR            3,00             MACELLERIA ANTINORI                               NAPOLI;3,00 €; Unicredit
+26/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+27/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+28/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €;
+29/09/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 25/09/2025CARTA *1156    DI EUR            5,50             R.C. S.R.L.                                       NAPOLI;5,50 €; Unicredit
+29/09/2025;Costi;TOOLS - App Smartphone;PAGAMENTO MASTERCARD E-Commerce del 27/09/2025    CARTA *1156    DI EUR           12,49             GOOGLE*GOOGLE PLAY APP                            G.CO/HELPPAY£;12,49 €; Unicredit
+29/09/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 25/09/2025CARTA *1156    DI EUR            2,50             LATTICINI SANTA MARIA                             CASORIA;2,50 €; Unicredit
+29/09/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 25/09/2025CARTA *1156    DI EUR            2,40             NEO CAFFE' SRL                                    Casoria;2,40 €; Unicredit
+29/09/2025;Costi;PIATTAFORME - Sony Playstation;ADDEBITO SEPA DD PER FATTURA A VOSTRO CARICO      Incasso 1045093716984                             SDD da LU96ZZZ0000000000000000058                 PayPal Europe S.a.r.l. et Cie S.C.A               mandato nr. 52N2224VZTXEJ                         Per 1045093716984/PAYPAL;8,99 €; Unicredit
+29/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €;
+29/09/2025;Costi;INVESTIMENTI - SCC;PayPal Europe S,a,r,l, et Cie S,C,A;100,00 €;
+30/09/2025;Costi;BANCA - Costi;COMPETENZE (INTERESSI/ONERI); -   € ; Unicredit
+30/09/2025;Costi;PIATTAFORME - Netflix;ADDEBITO SEPA DD PER FATTURA A VOSTRO CARICO      Incasso 1045124612268                             SDD da LU96ZZZ0000000000000000058                 PayPal Europe S.a.r.l. et Cie S.C.A               mandato nr. 52N2224VZTXEJ                         Per 1045124612268/PAYPAL;6,99 €; Unicredit
+30/09/2025;Costi;SPESA - Quotidiana;Settembre;10,24 €; Buoni Pasto
+30/09/2025;Ricavi;Assegno Unico;Ottobre;54,00 €; Unicredit Miky
+30/09/2025;Costi;INVESTIMENTI - SCC;Da Paypal residui;200,00 €; Unicredit
+30/09/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,08 €;
+30/09/2025;Costi;INVESTIMENTI - SCC;PayPal Europe S,a,r,l, et Cie S,C,A;50,00 €;
+01/10/2025;Costi;SPESA - Delivery;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 01/10/2025CARTA *1156    DI EUR           10,00             ROYAL BEEF                                        NAPOLI;10,00 €; Unicredit
+01/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 01/10/2025CARTA *1156    DI EUR            2,50             SumUp  *LA FOCACCIA SN                            NAPOLI;2,50 €; Unicredit
+01/10/2025;Costi;PIATTAFORME - Dazn;PAGAMENTO MASTERCARD E-Commerce del 30/09/2025    CARTA *1156    DI EUR            9,99             PAYPAL *DAZN DE                                   35314369001;9,99 €; Unicredit
+01/10/2025;Costi;SALUTE - Farmaci;PAGAMENTO MASTERCARD Contactless del 30/09/2025   CARTA *1156    DI EUR            6,90             FARMACIA MANDANICI DELLA                          CASORIA;6,90 €; Unicredit
+01/10/2025;Costi;SALUTE - Farmaci;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 29/09/2025CARTA *1156    DI EUR            1,65             FARMACIA COPPOLA                                  CASORIA;1,65 €; Unicredit
+01/10/2025;Costi;FAMIGLIA - Miky;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 29/09/2025CARTA *1156    DI EUR           53,97             DECATHLON 00000412                                CASORIA;53,97 €; Unicredit
+01/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 29/09/2025CARTA *1156    DI EUR           20,00             GELATERIA MALIBU'                                 CASORIA;20,00 €; Unicredit
+01/10/2025;Costi;BANCA - Mutuo Zia Annamaria;PAGAMENTO RATA MUTUO/PRESTITO                     PAGAMENTO RATA N. 27 DEL FINANZIAMENTO 000/2295949/000 DI UNICREDIT SPA DI CUI INTERESSI EURO 511,59 E ONERI/ASSICURAZIONI EURO 3,00;724,02 €; Unicredit
+01/10/2025;Costi;BANCA - Costi;MY GENIUS: COSTO FISSO MESE DI SETTEMBRE 2025;4,00 €; Unicredit
+01/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €; Revolut
+01/10/2025;Costi;INVESTIMENTI - Lungo Termine (BTP,Mercati);To Robo portfolio;363,40 €; Revolut
+02/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 02/10/2025CARTA *1156    DI EUR            3,60             COFFEE ISLAND                                     CASORIA;3,60 €; Unicredit
+02/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 02/10/2025CARTA *1156    DI EUR            2,40             GE.CO S.N.C. DI RUOCCO                            NAPOLI;2,40 €; Unicredit
+02/10/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 02/10/2025CARTA *1156    DI EUR           14,00             CASA LOTTI                                        NAPOLI;14,00 €; Unicredit
+02/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,07 €; Revolut
+02/10/2025;Costi;TOOLS - Microsoft;Microsoft-G115362136;14,35 €; CartaDiCredito
+03/10/2025;Costi;SPESE - Regali Amici;"DISPOSIZIONE DI BONIFICO                          BONIFICO ISTANTANEO DEL 03.10.2025 ALLE 18.57.45  A: Simona Iaccio                                  PER: Acquisto n.ro 10 Libri ""Il tesoro della lingua napoletana""                                     TRN: 1191252766683401                             COMM: 2.47                                        COMM SERV:";152,47 €; Unicredit
+03/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €; Revolut
+03/10/2025;Costi;PIATTAFORME - Disney+;Google Play Apps;5,99 €; CartaDiCredito
+04/10/2025;Costi;PIATTAFORME - Dazn;PAGAMENTO MASTERCARD E-Commerce del 04/10/2025    CARTA *1156    DI EUR           11,33             PAYPAL *DAZN DE                                   35314369001;11,33 €; Unicredit
+04/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 04/10/2025CARTA *1156    DI EUR           13,00             SumUp  *Leone distribu                            Casoria;13,00 €; Unicredit
+04/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €; Revolut
+05/10/2025;Costi;AUTO - Pedaggi e Parcheggi;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 05/10/2025CARTA *1156    DI EUR           10,00             QUICK PARKING MOSTRA D                            NAPOLI;10,00 €; Unicredit
+05/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €; Revolut
+06/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 06/10/2025CARTA *1156    DI EUR            6,50             BAR VITTORIA                                      NAPOLI;6,50 €; Unicredit
+06/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €; Revolut
+06/10/2025;Costi;UTENZE - Gas;PAYPAL *PAGA IN 3 RATE;75,97 €; CartaDiCredito
+06/10/2025;Costi;UTENZE - Fonia Mobile;WIND TRE PRODOTTI E SE;73,96 €; CartaDiCredito
+07/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 07/10/2025CARTA *1156    DI EUR            4,50             SumUp  *AMORE  E CAFE                             Napoli;4,50 €; Unicredit
+07/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+07/10/2025;Costi;INVESTIMENTI - SCC;PayPal Europe S.a.r.l. et Cie S.C.A;100,00 €; Revolut
+08/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 08/10/2025CARTA *1156    DI EUR            3,00             COFFEE ISLAND                                     CASORIA;3,00 €; Unicredit
+08/10/2025;Costi;AUTO - Pedaggi e Parcheggi;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 08/10/2025CARTA *1156    DI EUR            1,00             TANA  DIREZ.  USCITA -                            VOMERO;1,00 €; Unicredit
+08/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €; Revolut
+08/10/2025;Costi;BENI - Acquisti Personale;ZOOMARINE DI FRANCESC;55,00 €; CartaDiCredito
+09/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 09/10/2025CARTA *1156    DI EUR            4,60             ANTICA PASTICCERIA CAR                            NAPOLI;4,60 €; Unicredit
+09/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 09/10/2025CARTA *1156    DI EUR            4,63             DECO'                                             CASORIA;4,63 €; Unicredit
+09/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 09/10/2025CARTA *1156    DI EUR           12,00             MACELLERIA ROSATI                                 CASORIA;12,00 €; Unicredit
+09/10/2025;Costi;USCITE - Amici;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 09/10/2025CARTA *1156    DI EUR            5,00             NEO CAFFE' SRL                                    Casoria;5,00 €; Unicredit
+09/10/2025;Costi;PIATTAFORME - Spotify;PAGAMENTO MASTERCARD E-Commerce del 09/10/2025    CARTA *1156    DI EUR           11,99             PAYPAL *SPOTIFY*P3B533                            35314369001;11,99 €; Unicredit
+09/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €; Revolut
+09/10/2025;Costi;INVESTIMENTI - SCC;PayPal Europe S.a.r.l. et Cie S.C.A;100,00 €; Revolut
+10/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €; Revolut
+11/10/2025;Costi;PERSONALI - Barbiere;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 11/10/2025CARTA *1156    DI EUR           10,00             SumUp  *Acconciature m                            Casoria;10,00 €; Unicredit
+11/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 11/10/2025CARTA *1156    DI EUR           20,00             SumUp  *Leone distribu                            Casoria;20,00 €; Unicredit
+11/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 11/10/2025CARTA *1156    DI EUR            3,90             BAR SGAMBATI                                      CASORIA;3,90 €; Unicredit
+11/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+12/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,06 €; Revolut
+13/10/2025;Costi;SPESA - Delivery;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 13/10/2025CARTA *1156    DI EUR           23,50             NONNA TITTINA                                     NAPOLI;23,50 €; Unicredit
+13/10/2025;Costi;SPESA - Delivery;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 13/10/2025CARTA *1156    DI EUR            2,70             CASA INFANTE 1                                    NAPOLI;2,70 €; Unicredit
+13/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+13/10/2025;Costi;INVESTIMENTI - SCC;PayPal Europe S.a.r.l. et Cie S.C.A;100,00 €; Revolut
+14/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 14/10/2025CARTA *1156    DI EUR           11,77             G. PESCA SRL                                      CASORIA NAPOL;11,77 €; Unicredit
+14/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 14/10/2025CARTA *1156    DI EUR           11,40             MATTERA                                           NAPOLI;11,40 €; Unicredit
+14/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 14/10/2025CARTA *1156    DI EUR           11,01             DECO'                                             CASORIA;11,01 €; Unicredit
+14/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,04 €; Revolut
+14/10/2025;Costi;INVESTIMENTI - SCC;PayPal Europe S.a.r.l. et Cie S.C.A;100,00 €; Revolut
+15/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 15/10/2025CARTA *1156    DI EUR            9,24             DECO'                                             CASORIA;9,24 €; Unicredit
+15/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+15/10/2025;Costi;SALUTE - Farmaci;FARMACIA MANDANICI DELLA;18,40 €; CartaDiCredito
+15/10/2025;Costi;FAMIGLIA - Vestiti;PAYPAL *PAGA IN 3 RATE;91,67 €; CartaDiCredito
+16/10/2025;Costi;BENI - Acquisti Casa;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 16/10/2025CARTA *1156    DI EUR           15,00             BAZAR TUTTO MILLE                                 NAPOLI;15,00 €; Unicredit
+16/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 16/10/2025CARTA *1156    DI EUR            1,80             BAR PUNTO RISTORO SAGI                            NAPOLI;1,80 €; Unicredit
+16/10/2025;Costi;PERSONALI - Lavoro;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 16/10/2025CARTA *1156    DI EUR           17,25             VASINIKO'                                         NAPOLI;17,25 €; Unicredit
+16/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+16/10/2025;Costi;HOBBY - Associazioni;To LIONS CLUB NAPOLI NORD-EST;247,50 €; Revolut
+17/10/2025;Costi;INVESTIMENTI - SCC;;19,00 €; Unicredit
+17/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+18/10/2025;Costi;USCITE - Amici;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 18/10/2025CARTA *1156    DI EUR           19,50             SumUp  *Parigin sprits                            Casoria;19,50 €; Unicredit
+18/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+19/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+20/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 20/10/2025CARTA *1156    DI EUR            5,79             DECO'                                             CASORIA;5,79 €; Unicredit
+20/10/2025;Costi;SALUTE - Farmaci;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 20/10/2025CARTA *1156    DI EUR           21,00             FARMACIA MAGLIONE ALFO                            CASORIA;21,00 €; Unicredit
+20/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 20/10/2025CARTA *1156    DI EUR           16,00             ANTICA MACELLERIA THE                             CASAVATORE;16,00 €; Unicredit
+20/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,04 €; Revolut
+21/10/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 21/10/2025CARTA *1156    DI EUR           35,10             GRAN BAR RIVIERA LEONE                            NAPOLI;35,10 €; Unicredit
+21/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+21/10/2025;Costi;INVESTIMENTI - SCC;PayPal Europe S.a.r.l. et Cie S.C.A;50,00 €; Revolut
+21/10/2025;Costi;INVESTIMENTI - SCC;PayPal Europe S.a.r.l. et Cie S.C.A;5,00 €; Revolut
+21/10/2025;Costi;INVESTIMENTI - SCC;PAYPAL *BETFAIRITAL;20,00 €; CartaDiCredito
+22/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+23/10/2025;Costi;SALUTE - Farmaci;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 23/10/2025CARTA *1156    DI EUR            5,00             FARMACIA MAGLIONE ALFO                            CASORIA;5,00 €; Unicredit
+23/10/2025;Costi;;ADDEBITO SEPA DD PER FATTURA A VOSTRO CARICO      Incasso 1045666140880                             SDD da LU96ZZZ0000000000000000058                 PayPal Europe S.a.r.l. et Cie S.C.A               mandato nr. 52N2224VZTXEJ                         Per 1045666140880/PAYPAL;35,00 €; Unicredit
+23/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,04 €; Revolut
+23/10/2025;Costi;INVESTIMENTI - SCC;PayPal Europe S.a.r.l. et Cie S.C.A;15,00 €; Revolut
+23/10/2025;Costi;UTENZE - Gas;PAYPAL *MOONEY;47,85 €; CartaDiCredito
+23/10/2025;Costi;UTENZE - Gas;PAYPAL *PAG PUB AMM;42,35 €; CartaDiCredito
+23/10/2025;Costi;UTENZE - Gas;PAYPAL *PAG PUB AMM;36,45 €; CartaDiCredito
+24/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+24/10/2025;Costi;INVESTIMENTI - SCC;PayPal Europe S.a.r.l. et Cie S.C.A;50,00 €; Revolut
+25/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,04 €; Revolut
+26/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,05 €; Revolut
+27/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO MASTERCARD Contactless del 27/10/2025   CARTA *1156    DI EUR            7,31             DECO'                                             CASORIA;7,31 €; Unicredit
+27/10/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 27/10/2025CARTA *1156    DI EUR           10,00             SumUp  *Tufo    Tratto                            Napoli;10,00 €; Unicredit
+27/10/2025;Ricavi;Stipendio;VOSTRI EMOLUMENTI                                 STIPENDIO MESE OTTOBRE    25                      O.C. A.O.DI RILIEVO NAZIONALE SANTOBONO;2.942,71 €; Unicredit
+27/10/2025;Costi;AG.ENTRATE - Conguaglio 730;Conguaglio 730;600,00 €; Unicredit
+27/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,04 €; Revolut
+27/10/2025;Costi;AUTO - Pedaggi e Parcheggi;TANA  DIREZ.  USCITA -;1,00 €; CartaDiCredito
+28/10/2025;Costi;;PAGAMENTO MASTERCARD E-Commerce del 28/10/2025    CARTA *1156    DI EUR          305,00             PAYPAL *D'Anna Giusepp                            35314369001;305,00 €; Unicredit
+28/10/2025;Costi;PIATTAFORME - Sony Playstation;ADDEBITO SEPA DD PER FATTURA A VOSTRO CARICO      Incasso 1045755388909                             SDD da LU96ZZZ0000000000000000058                 PayPal Europe S.a.r.l. et Cie S.C.A               mandato nr. 52N2224VZTXEJ                         Per 1045755388909/PAYPAL;8,99 €; Unicredit
+28/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,04 €; Revolut
+28/10/2025;Costi;INVESTIMENTI - SCC;PayPal Europe S.a.r.l. et Cie S.C.A;50,00 €; Revolut
+28/10/2025;Costi;TOOLS - Microsoft;Microsoft-G120698537;14,35 €; CartaDiCredito
+28/10/2025;Costi;PIATTAFORME - Netflix;Netflix.com;6,99 €; CartaDiCredito
+29/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 29/10/2025CARTA *1156    DI EUR            5,81             DECO'                                             CASORIA;5,81 €; Unicredit
+29/10/2025;Costi;SPESA - Quotidiana;PAGAMENTO MASTERCARD Contactless del 29/10/2025   CARTA *1156    DI EUR            5,00             MACELLERIA ROSATI                                 CASORIA;5,00 €; Unicredit
+29/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,04 €; Revolut
+30/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,04 €; Revolut
+30/10/2025;Costi;INVESTIMENTI - SCC;PayPal Europe S.a.r.l. et Cie S.C.A;100,00 €; Revolut
+30/10/2025;Costi;INVESTIMENTI - Lungo Termine (BTP,Mercati);To Robo portfolio;200,00 €; Revolut
+31/10/2025;Ricavi;Proventi Primo Pilastro;Interest earned - Primo Pilastro - Fondo Emergenza;0,03 €; Revolut
+31/10/2025;Costi;BANCA - Costi;QUOTA DI RINNOVO DAL SECO;40,37 €; CartaDiCredito
+03/11/2025;Costi;BANCA - Mutuo Zia Annamaria;PAGAMENTO RATA MUTUO/PRESTITO                     PAGAMENTO RATA N. 28 DEL FINANZIAMENTO 000/2295949/000 DI UNICREDIT SPA DI CUI INTERESSI EURO 510,82 E ONERI/ASSICURAZIONI EURO 3,00;724,02 €; Unicredit
+03/11/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 31/10/2025CARTA *1156    DI EUR            4,20             NEO CAFFE' SRL                                    Casoria;4,20 €; Unicredit
+03/11/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 30/10/2025CARTA *1156    DI EUR            2,40             GE.CO S.N.C. DI RUOCCO                            NAPOLI;2,40 €; Unicredit
+03/11/2025;Costi;AUTO - Pedaggi e Parcheggi;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 30/10/2025CARTA *1156    DI EUR            1,00             TANA  DIREZ.  USCITA -                            CAPODICHINO;1,00 €; Unicredit
+03/11/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 30/10/2025CARTA *1156    DI EUR            7,40             SumUp  *Enor srls                                 Napoli;7,40 €; Unicredit
+03/11/2025;Costi;BANCA - Costi;MY GENIUS: COSTO FISSO MESE DI OTTOBRE 2025;4,00 €; Unicredit
+04/11/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 02/11/2025CARTA *1156    DI EUR           28,00             LATTICINI SANTA MARIA                             CASORIA;28,00 €; Unicredit
+04/11/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO MASTERCARD E-Commerce del 01/11/2025    CARTA *1156    DI EUR           10,00             PAYPAL *D'Anna Giusepp                            35314369001;10,00 €; Unicredit
+04/11/2025;Costi;SALUTE - Farmaci;PAGAMENTO MASTERCARD Contactless del 02/11/2025   CARTA *1156    DI EUR            3,16             FARMACIA MANDANICI DELLA                          CASORIA;3,16 €; Unicredit
+05/11/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 03/11/2025CARTA *1156    DI EUR           10,50             SumUp  *Siricio Salvat                            Napoli;10,50 €; Unicredit
+05/11/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 03/11/2025CARTA *1156    DI EUR            3,60             PUGLIESE GIUSEPPE                                 CASORIA;3,60 €; Unicredit
+06/11/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 04/11/2025CARTA *1156    DI EUR            8,00             SOUL BAR                                          NAPOLI;8,00 €; Unicredit
+06/11/2025;Costi;PIATTAFORME - Dazn;PAGAMENTO MASTERCARD E-Commerce del 04/11/2025    CARTA *1156    DI EUR           19,99             PAYPAL *DAZN DE                                   35314369001;19,99 €; Unicredit
+07/11/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 05/11/2025CARTA *1156    DI EUR            2,20             SOUL BAR                                          NAPOLI;2,20 €; Unicredit
+24/11/2025;Ricavi;Stipendio;VOSTRI EMOLUMENTI                                 STIPENDIO MESE NOVEMBRE   25                      O.C. A.O.DI RILIEVO NAZIONALE SANTOBONO;2.620,35 €; Unicredit
+27/11/2025;Costi;INVESTIMENTI - SCC;ADDEBITO SEPA DD PER FATTURA A VOSTRO CARICO      Incasso 1046455716154                             SDD da LU96ZZZ0000000000000000058                 PayPal Europe S.a.r.l. et Cie S.C.A               mandato nr. 52N2224VZTXEJ                         Per 1046455716154/PAYPAL;8,99 €; Unicredit
+30/11/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 30/11/2025CARTA *1156    DI EUR           35,70             LATTICINI SANTA MARIA                             CASORIA;35,70 €; Unicredit
+30/11/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 30/11/2025CARTA *1156    DI EUR           40,22             DECO'                                             CASORIA;40,22 €; Unicredit
+01/12/2025;Costi;AUTO - Pedaggi e Parcheggi;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 01/12/2025CARTA *1156    DI EUR            1,50             UNICOCAMPANIA                                     NAPOLI;1,50 €; Unicredit
+01/12/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 01/12/2025CARTA *1156    DI EUR            8,50             AUTOGRILL 0105                                    ANAGNI;8,50 €; Unicredit
+01/12/2025;Costi;BENI - Acquisti Personale;DISPOSIZIONE DI BONIFICO                          BONIFICO ISTANTANEO DEL 01.12.2025 ALLE 20.35.12  A: AORN Santobono Pausilipon                      PER: Giuseppe D'Anna - Tassa Concorso - CP-INGINFORMATICO/2025                                      TRN: 1291253359496720                             COMM: 2.47;12,47 €; Unicredit
+01/12/2025;Costi;BANCA - Mutuo Zia Annamaria;PAGAMENTO RATA MUTUO/PRESTITO                     PAGAMENTO RATA N. 29 DEL FINANZIAMENTO 000/2295949/000 DI UNICREDIT SPA DI CUI INTERESSI EURO 510,04 E ONERI/ASSICURAZIONI EURO 3,00;724,02 €; Unicredit
+01/12/2025;Costi;BANCA - Costi;MY GENIUS: COSTO FISSO MESE DI NOVEMBRE 2025;4,00 €; Unicredit
+02/12/2025;Costi;ASSICURAZIONE - Professionale;DISPOSIZIONE DI BONIFICO                          BONIFICO ISTANTANEO DEL 02.12.2025 ALLE 23.31.51  A: MARF BROKER SAS                                PER: Saldo Premio Annuale Polizza RC Patrimoniale Colpa Grave e Tutela Legale - D'Anna Giuseppe     TRN: 1291253360661377                             COMM: 2.47;709,47 €; Unicredit
+04/12/2025;Costi;PIATTAFORME - Dazn;PAGAMENTO MASTERCARD E-Commerce del 04/12/2025    CARTA *1156    DI EUR           19,99             PAYPAL *DAZN DE                                   35314369001;19,99 €; Unicredit
+16/12/2025;Costi;SPESA - Pranzo Lavoro Fuori;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 16/12/2025CARTA *1156    DI EUR            3,60             CAFFETTERIA RICCARDI D                            NAPOLI;3,60 €; Unicredit
+16/12/2025;Costi;SPESA - Quotidiana;PAGAMENTO GOOGLE PAY MASTERCARD NFC del 16/12/2025CARTA *1156    DI EUR           80,00             LATTICINI SANTA MARIA                             CASORIA;80,00 €; Unicredit
+16/12/2025;Costi;RISPARMI - Conto Deposito Peppe;DISPOSIZIONE DI BONIFICO                          BONIFICO ISTANTANEO DEL 16.12.2025 ALLE 21.58.23  A: Giuseppe D'Anna                                PER: Trasferimento Conto Deposito                 TRN: 1191253501922804                             COMM: 2.47                                        COMM SERV:;2.002,47 €; Unicredit
+18/12/2025;Ricavi;Stipendio;VOSTRI EMOLUMENTI                                 STIPENDIO MESE DICEMBRE   25                      O.C. A.O.DI RILIEVO NAZIONALE SANTOBONO;5.571,85 €; Unicredit
+29/12/2025;Costi;PIATTAFORME - Sony Playstation;ADDEBITO SEPA DD PER FATTURA A VOSTRO CARICO      Incasso 1047133358386                             SDD da LU96ZZZ0000000000000000058                 PayPal Europe S.a.r.l. et Cie S.C.A               mandato nr. 52N2224VZTXEJ                         Per 1047133358386/PAYPAL;26,99 €; Unicredit
+30/12/2025;Costi;PIATTAFORME - Sony Playstation;ADDEBITO SEPA DD PER FATTURA A VOSTRO CARICO      Incasso 1047179988462                             SDD da LU96ZZZ0000000000000000058                 PayPal Europe S.a.r.l. et Cie S.C.A               mandato nr. 52N2224VZTXEJ                         Per 1047179988462/PAYPAL;8,99 €; Unicredit
+31/12/2025;Costi;BANCA - Costi;COMPETENZE (INTERESSI/ONERI); -   € ; Unicredit

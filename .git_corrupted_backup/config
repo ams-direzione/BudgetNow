@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[user]
+	name = AMS-Direzione
+	email = direzione@ascommultiservice.it
+[remote "remote"]
+	url = https://github.com/ams-direzione/BudgetNow.git
+	fetch = +refs/heads/*:refs/remotes/remote/*

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker *",
+      "Bash(docker exec budgetnow-app php -r \"echo phpversion\\(\\);\")",
+      "Bash(docker exec budgetnow-app cat /var/log/php*.log)",
+      "Bash(docker exec budgetnow-app php -r \"error_reporting\\(E_ALL\\); ini_set\\(''display_errors'',1\\);\")",
+      "Bash(curl -s http://localhost:8085/)",
+      "Bash(docker exec budgetnow-app tail -5 /var/www/html/storage/logs/laravel.log)",
+      "Bash(curl -s -o /dev/null http://localhost:8085/)",
+      "Bash(docker exec budgetnow-app tail -3 /var/www/html/storage/logs/laravel.log)",
+      "Bash(docker compose restart app)",
+      "Bash(docker exec budgetnow-app tail -10 /var/www/html/storage/logs/laravel.log)",
+      "Bash(docker exec budgetnow-app php -r \"require ''/var/www/html/vendor/autoload.php''; $dotenv = Dotenv\\\\Dotenv::createImmutable\\(''/var/www/html''\\); $dotenv->load\\(\\); echo getenv\\(''APP_KEY''\\);\")",
+      "Bash(docker exec budgetnow-app ls -la /var/www/html/storage/framework/)",
+      "Bash(docker exec budgetnow-app ls -la /var/www/html/storage/)"
+    ]
+  }
+}
