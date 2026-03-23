@@ -5,37 +5,42 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\EntryType;
 use App\Models\JournalEntry;
+use App\Models\Office;
 use App\Models\ReferenceAccount;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Schema;
 
 class JournalEntryController extends Controller
 {
     public function index(Request $request)
     {
         $budgetId = $this->currentBudgetId();
+        $officeEnabled = Schema::hasTable('offices') && Schema::hasColumn('journal_entries', 'office_id');
+        $fieldVisibility = $this->journalFieldVisibility($budgetId);
+        $sortSessionKey = "journal.sort.budget.{$budgetId}";
 
-        $availableYears = JournalEntry::query()
-            ->where('budget_id', $budgetId)
-            ->selectRaw('YEAR(entry_date) as year')
-            ->distinct()
-            ->orderByDesc('year')
-            ->pluck('year')
-            ->map(fn ($year) => (int) $year)
-            ->all();
-
-        if ($availableYears === []) {
-            $availableYears = [(int) now()->format('Y')];
-        }
-
-        $selectedYear = (int) $request->query('year', $availableYears[0]);
-        if (! in_array($selectedYear, $availableYears, true)) {
-            $selectedYear = $availableYears[0];
-        }
+        $availableYears = $this->availableYearsFromDb($budgetId);
+        $selectedYear = $this->resolveSelectedYear($request, $availableYears);
 
         $allowedSort = ['entry_date', 'movement_number', 'amount'];
-        $sortField   = in_array($request->query('sort'), $allowedSort) ? $request->query('sort') : 'entry_date';
-        $sortDir     = $request->query('dir') === 'desc' ? 'desc' : 'asc';
+        $storedSort = (array) $request->session()->get($sortSessionKey, []);
+        $requestedSort = $request->query('sort');
+        $requestedDir = $request->query('dir');
+
+        $sortField = in_array($requestedSort, $allowedSort, true)
+            ? $requestedSort
+            : (in_array(($storedSort['field'] ?? null), $allowedSort, true) ? $storedSort['field'] : 'entry_date');
+
+        $sortDir = in_array($requestedDir, ['asc', 'desc'], true)
+            ? $requestedDir
+            : (in_array(($storedSort['dir'] ?? null), ['asc', 'desc'], true) ? $storedSort['dir'] : 'asc');
+
+        $request->session()->put($sortSessionKey, [
+            'field' => $sortField,
+            'dir' => $sortDir,
+        ]);
+
         $filters     = $request->query('filters', []);
         $search      = trim($request->query('search', ''));
         $movementFilter = trim((string) ($filters['movement_number'] ?? ''));
@@ -46,15 +51,21 @@ class JournalEntryController extends Controller
         $descriptionFilter = trim((string) ($filters['description'] ?? $search));
         $amountFilter   = trim((string) ($filters['amount'] ?? ''));
         $accountFilter  = trim((string) ($filters['account'] ?? ''));
+        $officeFilter   = trim((string) ($filters['office'] ?? ''));
         $perPage     = (int) $request->query('per_page', 20);
         $perPage     = in_array($perPage, [10, 20, 50, 100, 0]) ? $perPage : 20;
 
         $dateFrom = trim($request->query('date_from', ''));
         $dateTo   = trim($request->query('date_to', ''));
 
+        $with = ['referenceAccount', 'entryType', 'category.parent'];
+        if ($officeEnabled) {
+            $with[] = 'office';
+        }
+
         $query = JournalEntry::query()
             ->where('budget_id', $budgetId)
-            ->with(['referenceAccount', 'entryType', 'category.parent'])
+            ->with($with)
             ->orderBy($sortField, $sortDir)
             ->orderBy('movement_number');
 
@@ -75,7 +86,10 @@ class JournalEntryController extends Controller
             $query->whereHas('entryType', fn ($t) => $t->where('name', 'LIKE', '%' . $typeFilter . '%'));
         }
         if ($categoryFilter !== '') {
-            $query->whereHas('category', fn ($c) => $c->whereNull('parent_id')->where('name', 'LIKE', '%' . $categoryFilter . '%'));
+            $query->where(function ($q) use ($categoryFilter) {
+                $q->whereHas('category', fn ($c) => $c->whereNull('parent_id')->where('name', 'LIKE', '%' . $categoryFilter . '%'))
+                    ->orWhereHas('category.parent', fn ($p) => $p->where('name', 'LIKE', '%' . $categoryFilter . '%'));
+            });
         }
         if ($subCategoryFilter !== '') {
             $query->whereHas('category', fn ($c) => $c->whereNotNull('parent_id')->where('name', 'LIKE', '%' . $subCategoryFilter . '%'));
@@ -92,6 +106,9 @@ class JournalEntryController extends Controller
         if ($accountFilter !== '') {
             $query->whereHas('referenceAccount', fn ($a) => $a->where('name', 'LIKE', '%' . $accountFilter . '%'));
         }
+        if ($officeEnabled && $officeFilter !== '') {
+            $query->whereHas('office', fn ($o) => $o->where('name', 'LIKE', '%' . $officeFilter . '%'));
+        }
 
         $entries = $query->paginate($perPage ?: 9999)->withQueryString();
 
@@ -99,6 +116,7 @@ class JournalEntryController extends Controller
             'availableYears' => $availableYears,
             'selectedYear'   => $selectedYear,
             'yearRoute'      => route('journal.index'),
+            'nextMovementNumber' => $this->nextMovementNumber('MOV'),
             'entries'        => $entries,
             'sortField'      => $sortField,
             'sortDir'        => $sortDir,
@@ -108,8 +126,10 @@ class JournalEntryController extends Controller
             'dateFrom'       => $dateFrom,
             'dateTo'         => $dateTo,
             'entryTypes'     => EntryType::where('budget_id', $budgetId)->orderBy('name')->get(),
-            'categories'     => Category::where('budget_id', $budgetId)->orderBy('name')->get(),
+            'categories'     => Category::where('budget_id', $budgetId)->orderBy('sort_order')->orderBy('name')->get(),
             'accounts'       => ReferenceAccount::where('budget_id', $budgetId)->orderBy('name')->get(),
+            'offices'        => $officeEnabled ? Office::where('budget_id', $budgetId)->orderBy('name')->get() : collect(),
+            'fieldVisibility' => $fieldVisibility,
         ]);
     }
 
@@ -122,9 +142,14 @@ class JournalEntryController extends Controller
     {
         $data = $request->validate($this->rules(), $this->messages());
         $data['budget_id'] = $this->currentBudgetId();
+        $data['movement_number'] = $this->nextMovementNumber('MOV');
 
         $entry = JournalEntry::create($data);
         $entry->load(['entryType', 'category.parent', 'referenceAccount']);
+
+        if (Schema::hasTable('offices') && Schema::hasColumn('journal_entries', 'office_id')) {
+            $entry->load('office');
+        }
 
         if ($request->wantsJson()) {
             return response()->json([
@@ -152,6 +177,10 @@ class JournalEntryController extends Controller
 
         $entry->update($data);
         $entry->refresh()->load(['entryType', 'category.parent', 'referenceAccount']);
+
+        if (Schema::hasTable('offices') && Schema::hasColumn('journal_entries', 'office_id')) {
+            $entry->load('office');
+        }
 
         if ($request->wantsJson()) {
             $data = $this->entryToJson($entry);
@@ -189,6 +218,7 @@ class JournalEntryController extends Controller
         $cat    = $entry->category;
         $parent = $cat?->parent;
 
+        $officeEnabled = Schema::hasTable('offices') && Schema::hasColumn('journal_entries', 'office_id');
         return [
             'id'                   => $entry->id,
             'movement_number'      => $entry->movement_number,
@@ -202,9 +232,12 @@ class JournalEntryController extends Controller
             'description'          => $entry->description ?? '',
             'amount'               => (float) $entry->amount,
             'amount_formatted'     => number_format((float) $entry->amount, 2, ',', '.'),
-            'reference_account_id' => (string) $entry->reference_account_id,
+            'reference_account_id' => $entry->reference_account_id ? (string) $entry->reference_account_id : '',
             'account_name'         => $entry->referenceAccount?->name ?? '',
-            'account_edit_url'     => route('conti-riferimento.edit', $entry->reference_account_id),
+            'account_edit_url'     => $entry->reference_account_id ? route('conti-riferimento.edit', $entry->reference_account_id) : null,
+            'office_id'            => $officeEnabled && $entry->office_id ? (string) $entry->office_id : '',
+            'office_name'          => $officeEnabled ? ($entry->office?->name ?? '') : '',
+            'office_edit_url'      => $officeEnabled && $entry->office_id ? route('sedi.edit', $entry->office_id) : null,
         ];
     }
 
@@ -213,47 +246,72 @@ class JournalEntryController extends Controller
         $budgetId = $this->currentBudgetId();
 
         return [
+            'nextMovementNumber' => $this->nextMovementNumber('MOV'),
             'entryTypes' => EntryType::where('budget_id', $budgetId)->orderBy('name')->get(),
-            'categories' => Category::where('budget_id', $budgetId)->orderBy('name')->get(),
+            'categories' => Category::where('budget_id', $budgetId)->orderBy('sort_order')->orderBy('name')->get(),
             'accounts'   => ReferenceAccount::where('budget_id', $budgetId)->orderBy('name')->get(),
+            'offices'    => (Schema::hasTable('offices') && Schema::hasColumn('journal_entries', 'office_id'))
+                ? Office::where('budget_id', $budgetId)->orderBy('name')->get()
+                : collect(),
+            'fieldVisibility' => $this->journalFieldVisibility($budgetId),
         ];
     }
 
     private function rules(?int $ignoreId = null): array
     {
         $budgetId = $this->currentBudgetId();
-        $movementUnique = Rule::unique('journal_entries', 'movement_number')
-            ->where(fn ($q) => $q->where('budget_id', $budgetId));
-        if ($ignoreId) {
-            $movementUnique = $movementUnique->ignore($ignoreId);
+        $fieldVisibility = $this->journalFieldVisibility($budgetId);
+        $accountRules = [
+            Rule::exists('reference_accounts', 'id')->where(fn ($q) => $q->where('budget_id', $budgetId)),
+        ];
+
+        if ($fieldVisibility['show_account']) {
+            array_unshift($accountRules, 'required');
+        } else {
+            array_unshift($accountRules, 'nullable');
         }
 
+        $officeEnabled = Schema::hasTable('offices') && Schema::hasColumn('journal_entries', 'office_id');
         return [
-            'movement_number'      => [
-                'required',
-                'string',
-                'max:50',
-                $movementUnique,
-            ],
             'entry_date'           => ['required', 'date'],
             'entry_type_id'        => ['required', Rule::exists('entry_types', 'id')->where(fn ($q) => $q->where('budget_id', $budgetId))],
             'category_id'          => ['nullable', Rule::exists('categories', 'id')->where(fn ($q) => $q->where('budget_id', $budgetId))],
             'description'          => ['nullable', 'string', 'max:1000'],
             'amount'               => ['required', 'numeric', 'min:0.01'],
-            'reference_account_id' => ['required', Rule::exists('reference_accounts', 'id')->where(fn ($q) => $q->where('budget_id', $budgetId))],
+            'reference_account_id' => $accountRules,
+            'office_id'            => $officeEnabled
+                ? ['nullable', Rule::exists('offices', 'id')->where(fn ($q) => $q->where('budget_id', $budgetId))]
+                : ['nullable'],
         ];
     }
 
     private function messages(): array
     {
         return [
-            'movement_number.required'      => 'Il numero movimento è obbligatorio.',
-            'movement_number.unique'        => 'Esiste già un movimento con questo numero.',
             'entry_date.required'           => 'La data è obbligatoria.',
             'entry_type_id.required'        => 'Il tipo è obbligatorio.',
             'amount.required'               => "L'importo è obbligatorio.",
             'amount.min'                    => "L'importo deve essere maggiore di zero.",
             'reference_account_id.required' => 'Il conto di riferimento è obbligatorio.',
         ];
+    }
+
+    private function nextMovementNumber(string $prefix): string
+    {
+        $budgetId = $this->currentBudgetId();
+        $max = 0;
+
+        $numbers = JournalEntry::query()
+            ->where('budget_id', $budgetId)
+            ->where('movement_number', 'like', $prefix . '-%')
+            ->pluck('movement_number');
+
+        foreach ($numbers as $number) {
+            if (preg_match('/^' . preg_quote($prefix, '/') . '-(\d+)$/', (string) $number, $m)) {
+                $max = max($max, (int) $m[1]);
+            }
+        }
+
+        return sprintf('%s-%05d', $prefix, $max + 1);
     }
 }

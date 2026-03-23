@@ -30,7 +30,7 @@
 @php
     $colspan = $colspanEmpty ?? (count($columns) + 1);
     $tableId = 'dt_' . md5(request()->path() . '|' . spl_object_id($rows));
-    $queryWithoutFilters = request()->except(['filters', 'search', 'per_page', 'page']);
+    $queryWithoutFilters = request()->except(['filters', 'search', 'per_page', 'page', 'date_from', 'date_to']);
 @endphp
 
 <div>
@@ -131,10 +131,16 @@
                             </th>
                         @endforeach
                         <th class="px-4 py-2 text-right">
-                            <button type="submit" form="{{ $tableId }}_filters_top"
-                                    class="rounded-md border border-slate-300 px-2.5 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-50 transition-colors">
-                                Cerca
-                            </button>
+                            <div class="inline-flex items-center gap-1">
+                                <button type="submit" form="{{ $tableId }}_filters_top"
+                                        class="rounded-md border border-slate-300 px-2.5 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-50 transition-colors">
+                                    Cerca
+                                </button>
+                                <a href="{{ request()->url() }}?{{ http_build_query($queryWithoutFilters) }}"
+                                   class="rounded-md border border-slate-300 px-2.5 py-1.5 text-xs font-medium text-slate-500 hover:bg-slate-50 transition-colors">
+                                    Reset
+                                </a>
+                            </div>
                         </th>
                     </tr>
                 </thead>
@@ -173,10 +179,16 @@
                             </th>
                         @endforeach
                         <th class="px-4 py-2 text-right">
-                            <button type="submit" form="{{ $tableId }}_filters_bottom"
-                                    class="rounded-md border border-slate-300 px-2.5 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-50 transition-colors">
-                                Cerca
-                            </button>
+                            <div class="inline-flex items-center gap-1">
+                                <button type="submit" form="{{ $tableId }}_filters_bottom"
+                                        class="rounded-md border border-slate-300 px-2.5 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-50 transition-colors">
+                                    Cerca
+                                </button>
+                                <a href="{{ request()->url() }}?{{ http_build_query($queryWithoutFilters) }}"
+                                   class="rounded-md border border-slate-300 px-2.5 py-1.5 text-xs font-medium text-slate-500 hover:bg-slate-50 transition-colors">
+                                    Reset
+                                </a>
+                            </div>
                         </th>
                     </tr>
                 </tfoot>

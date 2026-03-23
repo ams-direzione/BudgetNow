@@ -63,7 +63,7 @@ class BudgetController extends Controller
         return view('budget.edit', compact('budget'));
     }
 
-    public function update(Request $request, Budget $budget): RedirectResponse
+    public function update(Request $request, Budget $budget)
     {
         abort_unless(app(CurrentBudget::class)->isAccessible($budget), 404);
 
@@ -75,16 +75,29 @@ class BudgetController extends Controller
 
         $budget->update($data);
 
+        if ($request->wantsJson()) {
+            return response()->json([
+                'success' => true,
+                'row' => [
+                    'id' => $budget->id,
+                    'name' => $budget->name,
+                ],
+            ]);
+        }
+
         return redirect()->route('budget.index')->with('success', 'Budget aggiornato con successo.');
     }
 
-    public function destroy(Budget $budget): RedirectResponse
+    public function destroy(Budget $budget)
     {
         abort_unless(app(CurrentBudget::class)->isAccessible($budget), 404);
 
         $allBudgets = $this->accessibleBudgetsQuery()->orderBy('name')->get();
 
         if ($allBudgets->count() <= 1) {
+            if (request()->wantsJson()) {
+                return response()->json(['error' => 'Non puoi eliminare l\'unico budget disponibile.'], 409);
+            }
             return back()->with('error', 'Non puoi eliminare l\'unico budget disponibile.');
         }
 
@@ -97,6 +110,10 @@ class BudgetController extends Controller
 
             $budget->delete();
         });
+
+        if (request()->wantsJson()) {
+            return response()->json(['success' => true]);
+        }
 
         return redirect()->route('budget.index')->with('success', 'Budget eliminato con successo.');
     }

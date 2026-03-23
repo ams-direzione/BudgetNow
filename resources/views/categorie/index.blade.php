@@ -8,9 +8,84 @@
 {{-- Dati per Alpine.js: select genitori (solo radici) --}}
 <script>
 window.parentCategories = @json($parents->map(fn($p) => ['id' => (string) $p->id, 'name' => $p->name]));
+window.categoryLayoutRoots = @json($layoutRoots);
 </script>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.6/Sortable.min.js"></script>
+<style>
+    .layout-item.dragging {
+        opacity: 0.4;
+    }
+</style>
 
 {{-- Barra azioni --}}
+<div class="mb-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm"
+     x-data="categoryLayoutEditor({
+         saveUrl: '{{ route('categorie.layout.save', $tipo) }}',
+         csrf: document.querySelector('meta[name=csrf-token]')?.content || '',
+         roots: window.categoryLayoutRoots || []
+     })"
+     x-init="init()">
+    <div class="flex flex-wrap items-center justify-between gap-2">
+        <div>
+            <h2 class="text-sm font-semibold text-slate-800">Layout categorie (drag and drop)</h2>
+            <p class="text-xs text-slate-500">Sposta i blocchi tra "Categorie radice" e le colonne delle categorie per creare o riassegnare sottocategorie.</p>
+        </div>
+        <div class="flex items-center gap-2">
+            <button type="button"
+                    class="rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-50"
+                    @click="resetToSaved()">
+                Annulla modifiche
+            </button>
+            <button type="button"
+                    class="rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+                    :disabled="saving || !dirty"
+                    @click="saveLayout()">
+                <span x-show="!saving">Salva layout</span>
+                <span x-show="saving" x-cloak>Salvataggio...</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="mt-3 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-[11px] text-amber-800">
+        La modifica struttura categorie influisce anche sugli schemi budget. I movimenti del Libro Giornale non vengono modificati nei dati registrati.
+    </div>
+
+    <div class="mt-4 grid grid-cols-1 gap-4 xl:grid-cols-3">
+        <div class="rounded-lg border border-slate-200 bg-slate-50 p-3">
+            <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-600">Categorie radice</h3>
+            <div id="layout-root-list" class="min-h-[160px] space-y-2 rounded-lg border border-dashed border-slate-300 bg-white p-2">
+                <template x-for="root in state.roots" :key="'root-list-' + root.id">
+                    <div class="layout-item cursor-move rounded-md border border-slate-200 bg-slate-100 px-2 py-1.5 text-xs text-slate-700"
+                         :data-id="root.id">
+                        <span class="font-medium" x-text="root.name"></span>
+                        <span class="ml-1 text-[10px] text-slate-500" x-text="'(' + root.journalEntries + ')'"></span>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+        <div class="xl:col-span-2 grid grid-cols-1 gap-4 lg:grid-cols-2">
+            <template x-for="root in state.roots" :key="'bucket-' + root.id">
+                <div class="rounded-lg border border-slate-200 bg-white p-3">
+                    <h3 class="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-600" x-text="'Subcategorie di: ' + root.name"></h3>
+                    <div class="layout-child-list min-h-[120px] space-y-2 rounded-lg border border-dashed border-slate-300 bg-slate-50 p-2"
+                         :data-parent-id="root.id">
+                        <template x-for="child in (state.childrenByParent[root.id] || [])" :key="'child-' + root.id + '-' + child.id">
+                            <div class="layout-item cursor-move rounded-md border border-slate-200 bg-white px-2 py-1.5 text-xs text-slate-700"
+                                 :data-id="child.id">
+                                <span x-text="child.name"></span>
+                                <span class="ml-1 text-[10px] text-slate-500" x-text="'(' + child.journalEntries + ')'"></span>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+
+    <p class="mt-2 text-[11px] text-slate-500">Le modifiche non sono definitive finche' non premi <strong>Salva layout</strong>.</p>
+</div>
+
 <div class="mb-4 flex items-center justify-between">
     <div class="flex items-center gap-3">
         <span class="text-sm text-slate-500">
@@ -274,5 +349,204 @@ window.parentCategories = @json($parents->map(fn($p) => ['id' => (string) $p->id
         {{ $rootCategories->withQueryString()->links() }}
     </div>
 @endif
+
+<script>
+function categoryLayoutEditor(config) {
+    return {
+        config,
+        saving: false,
+        dirty: false,
+        sortables: [],
+        savedSnapshot: '',
+        state: {
+            roots: [],
+            childrenByParent: {},
+        },
+        init() {
+            this.buildStateFromConfig(this.config.roots || []);
+            this.savedSnapshot = this.snapshot();
+            this.$nextTick(() => this.initSortables());
+        },
+        buildStateFromConfig(roots) {
+            this.state.roots = (roots || []).map((root) => ({
+                id: Number(root.id),
+                name: String(root.name || ''),
+                journalEntries: Number(root.journal_entries_count || 0),
+            }));
+            this.state.childrenByParent = {};
+            for (const root of roots || []) {
+                const parentId = Number(root.id);
+                this.state.childrenByParent[parentId] = (root.children || []).map((child) => ({
+                    id: Number(child.id),
+                    name: String(child.name || ''),
+                    journalEntries: Number(child.journal_entries_count || 0),
+                }));
+            }
+        },
+        resetToSaved() {
+            this.buildStateFromConfig(JSON.parse(this.savedSnapshot || '[]'));
+            this.dirty = false;
+            this.$nextTick(() => this.initSortables());
+        },
+        snapshot() {
+            const roots = this.state.roots.map((root) => ({
+                id: root.id,
+                name: root.name,
+                journal_entries_count: root.journalEntries,
+                children: (this.state.childrenByParent[root.id] || []).map((child) => ({
+                    id: child.id,
+                    name: child.name,
+                    journal_entries_count: child.journalEntries,
+                })),
+            }));
+            return JSON.stringify(roots);
+        },
+        destroySortables() {
+            for (const sortable of this.sortables) {
+                sortable.destroy();
+            }
+            this.sortables = [];
+        },
+        initSortables() {
+            this.destroySortables();
+            const commonOptions = {
+                group: 'category-layout',
+                animation: 120,
+                draggable: '.layout-item',
+                ghostClass: 'dragging',
+                onEnd: (evt) => this.onDragEnd(evt),
+            };
+
+            const rootList = document.getElementById('layout-root-list');
+            if (rootList) {
+                this.sortables.push(new Sortable(rootList, commonOptions));
+            }
+
+            document.querySelectorAll('.layout-child-list').forEach((el) => {
+                this.sortables.push(new Sortable(el, commonOptions));
+            });
+        },
+        nodeById(id) {
+            const nid = Number(id);
+            for (const root of this.state.roots) {
+                if (Number(root.id) === nid) {
+                    return { ...root };
+                }
+                const children = this.state.childrenByParent[root.id] || [];
+                for (const child of children) {
+                    if (Number(child.id) === nid) {
+                        return { ...child };
+                    }
+                }
+            }
+            return null;
+        },
+        onDragEnd(evt) {
+            const rootContainer = document.getElementById('layout-root-list');
+            const nextRoots = [];
+            const childMap = {};
+
+            if (rootContainer) {
+                rootContainer.querySelectorAll('.layout-item').forEach((node) => {
+                    const id = Number(node.dataset.id || 0);
+                    const item = this.nodeById(id);
+                    if (item) {
+                        nextRoots.push(item);
+                    }
+                });
+            }
+
+            document.querySelectorAll('.layout-child-list').forEach((container) => {
+                const parentId = Number(container.dataset.parentId || 0);
+                childMap[parentId] = [];
+                container.querySelectorAll('.layout-item').forEach((node) => {
+                    const id = Number(node.dataset.id || 0);
+                    const item = this.nodeById(id);
+                    if (item) {
+                        childMap[parentId].push(item);
+                    }
+                });
+            });
+
+            const rootIds = new Set(nextRoots.map((r) => Number(r.id)));
+            let invalid = false;
+            for (const root of nextRoots) {
+                const children = childMap[root.id] || [];
+                if (children.some((c) => Number(c.id) === Number(root.id))) {
+                    invalid = true;
+                    break;
+                }
+            }
+
+            const movingId = Number(evt.item?.dataset?.id || 0);
+            if (!invalid && movingId > 0 && !rootIds.has(movingId)) {
+                const movedChildren = childMap[movingId] || [];
+                if (movedChildren.length > 0) {
+                    alert('Una categoria con sottocategorie non puo\' diventare sottocategoria.');
+                    this.buildStateFromConfig(JSON.parse(this.snapshot()));
+                    this.$nextTick(() => this.initSortables());
+                    return;
+                }
+            }
+
+            if (invalid) {
+                alert('Operazione non valida.');
+                this.buildStateFromConfig(JSON.parse(this.snapshot()));
+                this.$nextTick(() => this.initSortables());
+                return;
+            }
+
+            this.state.roots = nextRoots;
+            this.state.childrenByParent = {};
+            for (const root of this.state.roots) {
+                this.state.childrenByParent[root.id] = childMap[root.id] || [];
+            }
+            this.dirty = this.snapshot() !== this.savedSnapshot;
+            this.$nextTick(() => this.initSortables());
+        },
+        payload() {
+            return {
+                roots: this.state.roots.map((root) => ({
+                    id: Number(root.id),
+                    children: (this.state.childrenByParent[root.id] || []).map((child) => Number(child.id)),
+                })),
+            };
+        },
+        async saveLayout() {
+            if (!this.dirty || this.saving) {
+                return;
+            }
+            if (!confirm('Confermi il salvataggio del layout categorie? Questa modifica aggiorna anche lo schema budget.')) {
+                return;
+            }
+
+            this.saving = true;
+            try {
+                const response = await fetch(this.config.saveUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json',
+                        'X-CSRF-TOKEN': this.config.csrf,
+                    },
+                    body: JSON.stringify(this.payload()),
+                });
+                const data = await response.json();
+                if (!response.ok || !data.success) {
+                    throw new Error(data.message || 'Errore durante il salvataggio del layout.');
+                }
+                this.savedSnapshot = this.snapshot();
+                this.dirty = false;
+                alert(data.message || 'Layout categorie salvato.');
+                window.location.reload();
+            } catch (error) {
+                alert(error.message || 'Errore durante il salvataggio del layout.');
+            } finally {
+                this.saving = false;
+            }
+        },
+    };
+}
+</script>
 
 @endsection

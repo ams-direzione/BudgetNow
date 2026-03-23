@@ -1,40 +1,46 @@
 @extends('layouts.app')
 
-@section('title', 'BudgetNow | Tipi di Movimento')
-@section('page-title', 'Tipi di Movimento')
+@section('title', 'BudgetNow | Sedi')
+@section('page-title', 'Sedi')
 
 @section('content')
 
 @php
 $cols = [
-    ['key' => 'name',  'label' => 'Nome',      'sortable' => true, 'searchable' => true],
-    ['key' => 'count', 'label' => 'Movimenti',  'sortable' => false],
+    ['key' => 'name', 'label' => 'Nome Sede', 'sortable' => true, 'searchable' => true],
+    ['key' => 'count', 'label' => 'Movimenti', 'sortable' => false],
 ];
 @endphp
 
 <x-data-table
     :columns="$cols"
-    :rows="$types"
+    :rows="$offices"
     :sort-field="$sortField"
     :sort-dir="$sortDir"
     :filters="$filters"
     :per-page="$perPage"
+    :create-url="route('sedi.create')"
+    create-label="Aggiungi Sede"
     :colspan-empty="3"
 >
-    @foreach($types as $tipo)
-        @php $row = ['id' => $tipo->id, 'name' => $tipo->name]; @endphp
+    @foreach($offices as $office)
+        @php
+            $row = [
+                'id' => $office->id,
+                'name' => $office->name,
+            ];
+        @endphp
 
         <tbody x-data="editableRow(
                     {{ json_encode($row) }},
-                    '{{ route('tipi.update', $tipo) }}',
-                    '{{ route('tipi.destroy', $tipo) }}'
+                    '{{ route('sedi.update', $office) }}',
+                    '{{ route('sedi.destroy', $office) }}'
                 )"
                class="border-b border-slate-100 last:border-0">
 
-            {{-- Vista --}}
             <tr x-show="!editing" class="hover:bg-slate-50 align-middle">
                 <td class="px-4 py-3 font-medium" x-text="orig.name"></td>
-                <td class="px-4 py-3 text-slate-500">{{ $tipo->journalEntries()->count() }}</td>
+                <td class="px-4 py-3 text-slate-500">{{ $office->journalEntries()->count() }}</td>
                 <td class="px-4 py-3 text-right whitespace-nowrap">
                     <button @click="startEdit()" title="Modifica"
                             class="rounded-md border border-slate-300 p-1.5 text-slate-600 hover:bg-slate-100 transition-colors">
@@ -47,10 +53,9 @@ $cols = [
                 </td>
             </tr>
 
-            {{-- Modifica inline --}}
             <tr x-show="editing" x-cloak class="bg-amber-50/60 align-top">
                 <td class="px-4 py-3">
-                    <input type="text" x-model="form.name" placeholder="Nome tipo"
+                    <input type="text" x-model="form.name" placeholder="Nome sede"
                            class="w-full rounded border px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                            :class="errors.name ? 'border-rose-400 bg-rose-50' : 'border-slate-300'">
                     <p x-show="errors.name" x-text="errors.name?.[0]" class="text-rose-600 text-xs mt-0.5" x-cloak></p>

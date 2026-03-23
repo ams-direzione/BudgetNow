@@ -31,30 +31,12 @@ class EntryTypeController extends Controller
 
     public function create()
     {
-        return view('tipi.create');
+        abort(403, 'Creazione tipi disabilitata.');
     }
 
     public function store(Request $request)
     {
-        $budgetId = $this->currentBudgetId();
-        $data = $request->validate([
-            'name' => [
-                'required',
-                'string',
-                'max:100',
-                Rule::unique('entry_types', 'name')->where(fn ($q) => $q->where('budget_id', $budgetId)),
-            ],
-        ], [
-            'name.required' => 'Il nome è obbligatorio.',
-            'name.unique'   => 'Esiste già un tipo con questo nome.',
-        ]);
-
-        EntryType::create([
-            'budget_id' => $budgetId,
-            'name' => $data['name'],
-        ]);
-
-        return redirect()->route('tipi.index')->with('success', 'Tipo aggiunto con successo.');
+        abort(403, 'Creazione tipi disabilitata.');
     }
 
     public function edit(EntryType $tipo)

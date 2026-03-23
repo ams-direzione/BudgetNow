@@ -6,40 +6,37 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class JournalEntry extends Model
+class JournalImportTemplate extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'budget_id',
-        'movement_number',
-        'entry_date',
+        'name',
+        'delimiter',
+        'date_column',
+        'description_column',
+        'amount_column',
+        'budget_voice_column',
+        'date_format',
         'entry_type_id',
-        'category_id',
-        'description',
-        'amount',
         'reference_account_id',
         'office_id',
+        'voice_category_map',
     ];
 
     protected $casts = [
-        'entry_date' => 'date',
-        'amount' => 'decimal:2',
+        'voice_category_map' => 'array',
     ];
-
-    public function entryType(): BelongsTo
-    {
-        return $this->belongsTo(EntryType::class);
-    }
 
     public function budget(): BelongsTo
     {
         return $this->belongsTo(Budget::class);
     }
 
-    public function category(): BelongsTo
+    public function entryType(): BelongsTo
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(EntryType::class);
     }
 
     public function referenceAccount(): BelongsTo

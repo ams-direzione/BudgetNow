@@ -34,23 +34,91 @@
     })();
 </script>
     <style>
-        .table-standard > tbody > tr:nth-child(odd) {
+        .table-standard > tbody:nth-of-type(odd) > tr {
             background-color: #f8fafc;
+        }
+        @media (min-width: 1024px) {
+            #app-sidebar {
+                width: 16rem;
+                min-width: 16rem;
+                max-width: 16rem;
+                flex: 0 0 16rem;
+            }
         }
     </style>
 </head>
-<body class="bg-slate-100 text-slate-800" x-data="{ sidebarOpen: false }">
-<div class="min-h-screen lg:flex">
+<body class="bg-slate-100 text-slate-800"
+      x-data="{
+          sidebarOpen: false,
+          sidebarCollapsed: false,
+          isDesktop: window.innerWidth >= 1024,
+          navSections: {
+              anagrafica: true,
+              categorie: true,
+              corrente: true,
+              analisi: true,
+              import_export: true,
+              importa_dati: true,
+              esporta_dati: true,
+              preventivo: true,
+              impostazioni: true,
+          },
+          init() {
+              try { this.sidebarCollapsed = localStorage.getItem('bn_sidebar_collapsed') === '1'; } catch (e) {}
+              try { this.sidebarOpen = localStorage.getItem('bn_sidebar_open') === '1'; } catch (e) {}
+              try {
+                  const raw = localStorage.getItem('bn_nav_sections');
+                  if (raw) {
+                      const parsed = JSON.parse(raw);
+                      this.navSections.anagrafica = typeof parsed.anagrafica === 'boolean' ? parsed.anagrafica : this.navSections.anagrafica;
+                      this.navSections.categorie = typeof parsed.categorie === 'boolean' ? parsed.categorie : this.navSections.categorie;
+                      this.navSections.corrente = typeof parsed.corrente === 'boolean' ? parsed.corrente : this.navSections.corrente;
+                      this.navSections.analisi = typeof parsed.analisi === 'boolean' ? parsed.analisi : this.navSections.analisi;
+                      this.navSections.import_export = typeof parsed.import_export === 'boolean' ? parsed.import_export : this.navSections.import_export;
+                      this.navSections.importa_dati = typeof parsed.importa_dati === 'boolean' ? parsed.importa_dati : this.navSections.importa_dati;
+                      this.navSections.esporta_dati = typeof parsed.esporta_dati === 'boolean' ? parsed.esporta_dati : this.navSections.esporta_dati;
+                      this.navSections.preventivo = typeof parsed.preventivo === 'boolean' ? parsed.preventivo : this.navSections.preventivo;
+                      this.navSections.impostazioni = typeof parsed.impostazioni === 'boolean' ? parsed.impostazioni : this.navSections.impostazioni;
+                  }
+              } catch (e) {}
+              window.addEventListener('resize', () => {
+                  this.isDesktop = window.innerWidth >= 1024;
+                  if (this.isDesktop) {
+                      this.sidebarOpen = false;
+                      try { localStorage.setItem('bn_sidebar_open', '0'); } catch (e) {}
+                  }
+              });
+          },
+          toggleSidebarCollapsed() {
+              this.sidebarCollapsed = !this.sidebarCollapsed;
+              try { localStorage.setItem('bn_sidebar_collapsed', this.sidebarCollapsed ? '1' : '0'); } catch (e) {}
+          },
+          toggleSidebarMobile() {
+              this.sidebarOpen = !this.sidebarOpen;
+              try { localStorage.setItem('bn_sidebar_open', this.sidebarOpen ? '1' : '0'); } catch (e) {}
+          },
+          toggleNavSection(section) {
+              this.navSections[section] = !this.navSections[section];
+              try { localStorage.setItem('bn_nav_sections', JSON.stringify(this.navSections)); } catch (e) {}
+          }
+      }">
+<div class="min-h-screen">
     <aside
+        id="app-sidebar"
         :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'"
-        class="fixed inset-y-0 left-0 z-40 w-72 transform bg-slate-900 text-slate-200 transition-transform duration-200 lg:static lg:inset-auto lg:translate-x-0 overflow-y-auto"
+        :style="(isDesktop && sidebarCollapsed) ? 'display:none' : ''"
+        class="fixed inset-y-0 left-0 z-40 w-64 transform bg-slate-900 text-slate-200 transition-all duration-200 overflow-y-auto"
     >
-        <div class="flex h-16 items-center border-b border-slate-700 px-6">
+        <a href="{{ route('home', isset($selectedYear) ? ['year' => $selectedYear] : []) }}"
+           class="flex h-16 items-center border-b border-slate-700 px-6 hover:bg-slate-800/60 transition-colors">
             <img src="{{ asset('images/logo/logo.svg') }}" alt="BudgetNow" class="h-8">
             <span class="ml-3 font-semibold tracking-wide">BudgetNow</span>
-        </div>
+        </a>
 
         <nav class="p-4">
+            @php
+                $yearQuery = isset($selectedYear) ? ['year' => $selectedYear] : [];
+            @endphp
             <a href="{{ route('home', isset($selectedYear) ? ['year' => $selectedYear] : []) }}"
                class="block rounded-lg px-4 py-2.5 text-sm font-medium {{ request()->routeIs('home') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-200 hover:bg-slate-800' }}">
                 Home
@@ -60,44 +128,191 @@
                 Libro Giornale
             </a>
 
-            <p class="mt-6 mb-2 px-4 text-xs font-semibold uppercase tracking-wider text-slate-500">Anagrafiche</p>
-
-            <a href="{{ route('tipi.index') }}"
-               class="block rounded-lg px-4 py-2.5 text-sm font-medium {{ request()->routeIs('tipi.*') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-200 hover:bg-slate-800' }}">
-                Tipi di Movimento
-            </a>
-
-            {{-- Categorie: una sottovoce per ogni tipo di movimento --}}
             <div class="mt-1">
-                <p class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-500">Categorie</p>
-                @foreach($navEntryTypes ?? [] as $navType)
-                    @php $isActiveCategoria = request()->routeIs('categorie.*') && request()->route('tipo')?->id === $navType->id; @endphp
-                    <a href="{{ route('categorie.index', $navType) }}"
-                       class="ml-2 block rounded-lg px-4 py-2 text-sm font-medium {{ $isActiveCategoria ? 'bg-blue-500/20 text-blue-300' : 'text-slate-300 hover:bg-slate-800' }}">
-                        {{ $navType->name }}
-                    </a>
-                @endforeach
+                <button type="button"
+                        @click="toggleNavSection('categorie')"
+                        class="mt-3 mb-1 flex w-full items-center justify-between rounded-lg px-4 py-2 text-left text-xs font-semibold uppercase tracking-wider text-slate-500 hover:bg-slate-800/60">
+                    <span>Categorie</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 transition-transform" :class="navSections.categorie ? 'rotate-180' : ''" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div x-show="navSections.categorie" x-cloak>
+                    @foreach($navEntryTypes ?? [] as $navType)
+                        @php $isActiveCategoria = request()->routeIs('categorie.*') && request()->route('tipo')?->id === $navType->id; @endphp
+                        <a href="{{ route('categorie.index', $navType) }}"
+                           class="ml-2 block rounded-lg px-4 py-2 text-sm font-medium {{ $isActiveCategoria ? 'bg-blue-500/20 text-blue-300' : 'text-slate-300 hover:bg-slate-800' }}">
+                            {{ $navType->name }}
+                        </a>
+                    @endforeach
+                </div>
             </div>
 
-            <a href="{{ route('conti-riferimento.index') }}"
-               class="mt-1 block rounded-lg px-4 py-2.5 text-sm font-medium {{ request()->routeIs('conti-riferimento.*') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-200 hover:bg-slate-800' }}">
-                Conti di Riferimento
-            </a>
+            <button type="button"
+                    @click="toggleNavSection('corrente')"
+                    class="mt-6 mb-1 flex w-full items-center justify-between rounded-lg px-4 py-2 text-left text-xs font-semibold uppercase tracking-wider text-slate-500 hover:bg-slate-800/60">
+                <span>Budget Corrente</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 transition-transform" :class="navSections.corrente ? 'rotate-180' : ''" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <div class="mt-1" x-show="navSections.corrente" x-cloak>
+                <a href="{{ route('corrente.entrate', $yearQuery) }}"
+                   class="ml-2 block rounded-lg px-4 py-2 text-sm font-medium {{ request()->routeIs('corrente.entrate') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-300 hover:bg-slate-800' }}">
+                    Entrate
+                </a>
+                <a href="{{ route('corrente.uscite', $yearQuery) }}"
+                   class="ml-2 block rounded-lg px-4 py-2 text-sm font-medium {{ request()->routeIs('corrente.uscite') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-300 hover:bg-slate-800' }}">
+                    Uscite
+                </a>
+            </div>
 
-            <a href="{{ route('budget.index') }}"
-               class="mt-1 block rounded-lg px-4 py-2.5 text-sm font-medium {{ request()->routeIs('budget.*') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-200 hover:bg-slate-800' }}">
-                Budget
-            </a>
+            <button type="button"
+                    @click="toggleNavSection('preventivo')"
+                    class="mt-3 mb-1 flex w-full items-center justify-between rounded-lg px-4 py-2 text-left text-xs font-semibold uppercase tracking-wider text-slate-500 hover:bg-slate-800/60">
+                <span>Budget Preventivo</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 transition-transform" :class="navSections.preventivo ? 'rotate-180' : ''" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <div class="mt-1" x-show="navSections.preventivo" x-cloak>
+                <a href="{{ route('preventivo.entrate', $yearQuery) }}"
+                   class="ml-2 block rounded-lg px-4 py-2 text-sm font-medium {{ request()->routeIs('preventivo.entrate') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-300 hover:bg-slate-800' }}">
+                    Entrate
+                </a>
+                <a href="{{ route('preventivo.uscite', $yearQuery) }}"
+                   class="ml-2 block rounded-lg px-4 py-2 text-sm font-medium {{ request()->routeIs('preventivo.uscite') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-300 hover:bg-slate-800' }}">
+                    Uscite
+                </a>
+            </div>
+
+            <button type="button"
+                    @click="toggleNavSection('analisi')"
+                    class="mt-3 mb-1 flex w-full items-center justify-between rounded-lg px-4 py-2 text-left text-xs font-semibold uppercase tracking-wider text-slate-500 hover:bg-slate-800/60">
+                <span>Analisi</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 transition-transform" :class="navSections.analisi ? 'rotate-180' : ''" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <div class="mt-1" x-show="navSections.analisi" x-cloak>
+                <a href="{{ route('analysis.flows', $yearQuery) }}"
+                   class="ml-2 block rounded-lg px-4 py-2 text-sm font-medium {{ request()->routeIs('analysis.flows') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-300 hover:bg-slate-800' }}">
+                    Flussi
+                </a>
+            </div>
+
+            <hr class="my-4 border-slate-700/70">
+
+            <button type="button"
+                    @click="toggleNavSection('anagrafica')"
+                    class="mt-1 mb-1 flex w-full items-center justify-between rounded-lg px-4 py-2 text-left text-xs font-semibold uppercase tracking-wider text-slate-500 hover:bg-slate-800/60">
+                <span>Anagrafiche</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 transition-transform" :class="navSections.anagrafica ? 'rotate-180' : ''" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <div x-show="navSections.anagrafica" x-cloak>
+                <a href="{{ route('conti-riferimento.index') }}"
+                   class="block rounded-lg px-4 py-2.5 text-sm font-medium {{ request()->routeIs('conti-riferimento.*') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-200 hover:bg-slate-800' }}">
+                    Conti di Riferimento
+                </a>
+                <a href="{{ route('sedi.index') }}"
+                   class="mt-1 block rounded-lg px-4 py-2.5 text-sm font-medium {{ request()->routeIs('sedi.*') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-200 hover:bg-slate-800' }}">
+                    Sedi
+                </a>
+
+                <a href="{{ route('tipi.index') }}"
+                   class="mt-1 block rounded-lg px-4 py-2.5 text-sm font-medium {{ request()->routeIs('tipi.*') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-200 hover:bg-slate-800' }}">
+                    Tipi di Movimento
+                </a>
+
+            </div>
+
+            <button type="button"
+                    @click="toggleNavSection('impostazioni')"
+                    class="mt-6 mb-1 flex w-full items-center justify-between rounded-lg px-4 py-2 text-left text-xs font-semibold uppercase tracking-wider text-slate-500 hover:bg-slate-800/60">
+                <span>Impostazioni</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 transition-transform" :class="navSections.impostazioni ? 'rotate-180' : ''" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <div x-show="navSections.impostazioni" x-cloak>
+                <a href="{{ route('budget.index') }}"
+                   class="ml-2 block rounded-lg px-4 py-2 text-sm font-medium {{ request()->routeIs('budget.*') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-300 hover:bg-slate-800' }}">
+                    Gestione Budget
+                </a>
+                <a href="{{ route('opzioni.edit') }}"
+                   class="ml-2 mt-1 block rounded-lg px-4 py-2 text-sm font-medium {{ request()->routeIs('opzioni.*') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-300 hover:bg-slate-800' }}">
+                    Opzioni
+                </a>
+            </div>
+
+            <button type="button"
+                    @click="toggleNavSection('import_export')"
+                    class="mt-6 mb-1 flex w-full items-center justify-between rounded-lg px-4 py-2 text-left text-xs font-semibold uppercase tracking-wider text-slate-500 hover:bg-slate-800/60">
+                <span>Import / Export</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 transition-transform" :class="navSections.import_export ? 'rotate-180' : ''" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            <div class="mt-1" x-show="navSections.import_export" x-cloak>
+                <button type="button"
+                        @click="toggleNavSection('importa_dati')"
+                        class="ml-2 mt-1 mb-1 flex w-full items-center justify-between rounded-lg px-4 py-2 text-left text-xs font-semibold uppercase tracking-wider text-slate-500 hover:bg-slate-800/60">
+                    <span>Importa Dati</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 transition-transform" :class="navSections.importa_dati ? 'rotate-180' : ''" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div x-show="navSections.importa_dati" x-cloak>
+                    <a href="{{ route('journal.import.csv.create') }}"
+                       class="ml-4 block rounded-lg px-4 py-2 text-sm font-medium {{ request()->routeIs('journal.import.csv.*') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-300 hover:bg-slate-800' }}">
+                        CSV
+                    </a>
+                    <a href="{{ route('data-transfer.import.sql.form') }}"
+                       class="ml-4 mt-1 block rounded-lg px-4 py-2 text-sm font-medium {{ request()->routeIs('data-transfer.import.sql.*') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-300 hover:bg-slate-800' }}">
+                        SQL
+                    </a>
+                </div>
+
+                <button type="button"
+                        @click="toggleNavSection('esporta_dati')"
+                        class="ml-2 mt-2 mb-1 flex w-full items-center justify-between rounded-lg px-4 py-2 text-left text-xs font-semibold uppercase tracking-wider text-slate-500 hover:bg-slate-800/60">
+                    <span>Esporta Dati</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 transition-transform" :class="navSections.esporta_dati ? 'rotate-180' : ''" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div x-show="navSections.esporta_dati" x-cloak>
+                    <a href="{{ route('data-transfer.export.sql.form') }}"
+                       class="ml-4 block rounded-lg px-4 py-2 text-sm font-medium {{ request()->routeIs('data-transfer.export.sql.*') ? 'bg-blue-500/20 text-blue-300' : 'text-slate-300 hover:bg-slate-800' }}">
+                        SQL
+                    </a>
+                </div>
+            </div>
+
         </nav>
     </aside>
 
-    <div class="flex min-h-screen flex-1 flex-col">
+    <div :class="(isDesktop && !sidebarCollapsed) ? 'lg:ml-64 lg:w-[calc(100%-16rem)]' : 'lg:ml-0 lg:w-full'"
+         class="flex min-h-screen min-w-0 flex-col transition-[margin,width] duration-200">
         <header class="sticky top-0 z-30 border-b border-slate-200 bg-white">
             <div class="flex h-16 items-center justify-between px-4 sm:px-6">
                 <div class="flex items-center gap-3">
-                    <button @click="sidebarOpen = !sidebarOpen" class="rounded-md border border-slate-200 p-2 text-slate-600 lg:hidden">
+                    <button @click="toggleSidebarMobile()" class="rounded-md border border-slate-200 p-2 text-slate-600 lg:hidden">
                         <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                             <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h8a1 1 0 010 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 010 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <button @click="toggleSidebarCollapsed()"
+                            x-show="isDesktop"
+                            class="hidden lg:inline-flex rounded-md border border-slate-200 p-2 text-slate-600 hover:bg-slate-50"
+                            :title="sidebarCollapsed ? 'Espandi menù laterale' : 'Comprimi menù laterale'">
+                        <svg x-show="!sidebarCollapsed" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.78 4.22a.75.75 0 010 1.06L8.06 10l4.72 4.72a.75.75 0 11-1.06 1.06l-5.25-5.25a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z" clip-rule="evenodd" />
+                        </svg>
+                        <svg x-show="sidebarCollapsed" x-cloak xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M7.22 15.78a.75.75 0 010-1.06L11.94 10 7.22 5.28a.75.75 0 111.06-1.06l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 01-1.06 0z" clip-rule="evenodd" />
                         </svg>
                     </button>
                     <h1 class="text-lg font-semibold">@yield('page-title')</h1>
@@ -122,6 +337,15 @@
                     @if(isset($yearRoute) && isset($availableYears))
                         <form action="{{ $yearRoute }}" method="GET" class="flex items-center gap-2">
                             <label for="year" class="text-sm text-slate-500">Anno</label>
+                            @foreach(request()->except('year') as $k => $v)
+                                @if(is_array($v))
+                                    @foreach($v as $vv)
+                                        <input type="hidden" name="{{ $k }}[]" value="{{ $vv }}">
+                                    @endforeach
+                                @else
+                                    <input type="hidden" name="{{ $k }}" value="{{ $v }}">
+                                @endif
+                            @endforeach
                             <select id="year" name="year" class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm" onchange="this.form.submit()">
                                 @foreach($availableYears as $year)
                                     <option value="{{ $year }}" @selected($year === $selectedYear)>{{ $year }}</option>

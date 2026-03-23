@@ -11,7 +11,7 @@ class Category extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['budget_id', 'name', 'parent_id', 'entry_type_id'];
+    protected $fillable = ['budget_id', 'name', 'parent_id', 'entry_type_id', 'sort_order'];
 
     public function journalEntries(): HasMany
     {
